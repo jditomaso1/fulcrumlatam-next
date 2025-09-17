@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "FulcrumLATAM",
-  description: "Nearshore teams that move faster and cost less."
+export const metadata = {
+  title: "FulcrumLATAM — Nearshore teams that move faster and cost less",
+  description:
+    "FulcrumLATAM recruits, vets, and manages high-caliber talent in LATAM for U.S. firms—finance, data, engineering, operations, and more.",
+  icons: { icon: "/favicon.png" },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>{children}</body>
