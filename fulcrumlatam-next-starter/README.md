@@ -1,0 +1,1 @@
+# FulcrumLATAM Starter\n\nRun `npm install` then `npm run dev`. Deploy with Vercel.
