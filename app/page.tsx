@@ -1,285 +1,222 @@
+"use client";
+
 import React from "react";
-import { CheckCircle2, Users, Briefcase, Shield, ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, MapPin, Clock, Shield, Users, DollarSign } from "lucide-react";
 
 export default function FulcrumLatamLanding() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
-      {/* NAV */}
-      <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
+    <div className="min-h-screen bg-gray-50 text-gray-900">
+      {/* Nav */}
+      <header className="sticky top-0 z-30 bg-white/80 backdrop-blur border-b">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-full bg-black" />
-            <span className="font-semibold">FulcrumLATAM</span>
+            <div className="h-9 w-9 rounded-2xl bg-black text-white grid place-items-center font-semibold">FL</div>
+            <span className="font-semibold tracking-tight">FulcrumLATAM</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#home" className="hover:text-black/70">Home</a>
             <a href="#services" className="hover:text-black/70">Services</a>
             <a href="#why" className="hover:text-black/70">Why Fulcrum</a>
-            <a href="#roles" className="hover:text-black/70">Roles We Hire</a>
             <a href="#pricing" className="hover:text-black/70">Pricing</a>
-            <a href="#partners" className="hover:text-black/70">Partners</a>
+            <a href="#talent" className="hover:text-black/70">Talent</a>
             <a href="#contact" className="hover:text-black/70">Contact</a>
           </nav>
-          <div className="flex items-center gap-3">
-            <a href="#contact" className="px-4 py-2 rounded-xl border">Get Started</a>
-          </div>
+          <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
+            Get started <ArrowRight size={16} />
+          </a>
         </div>
       </header>
 
-      {/* HERO */}
-      <section id="home" className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-              Looking for talent? <span className="block">We’ll build your nearshore team.</span>
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
+        <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
+          <div className="max-w-2xl">
+            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
+              Nearshore teams that move <span className="underline decoration-4 decoration-amber-400 underline-offset-4">faster</span> and cost <span className="underline decoration-4 decoration-amber-400 underline-offset-4">less</span>.
             </h1>
-            <p className="mt-5 text-lg text-gray-600">
-              We collaborate closely with your team to identify and secure top bilingual talent in Latin America—aligned to your role scope, culture, and time zone. Fully managed recruiting, HR, and payroll so you can focus on growth.
+            <p className="mt-4 text-lg text-gray-600">
+              FulcrumLATAM recruits, vets, and manages high-caliber talent in Colombia and across LATAM for U.S. firms—finance, data, engineering, operations, and more.
             </p>
-            <div className="mt-8 flex gap-3">
-              <a href="#contact" className="px-5 py-3 rounded-xl bg-black text-white inline-flex items-center gap-2">
-                Book an intro <ArrowRight className="h-4 w-4" />
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
+                Book an intro call <ArrowRight size={16} />
               </a>
-              <a href="#services" className="px-5 py-3 rounded-xl border">See how it works</a>
+              <a href="#services" className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100">
+                Explore services
+              </a>
             </div>
-            <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
-              {[
-                "60–80% workforce cost reduction",
-                "Fully managed: Recruitment, Admin, HR",
-                "EST/CST/PST coverage",
-                "Flexible terms (1-month notice)",
-              ].map((t) => (
-                <div key={t} className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 mt-0.5" /><span>{t}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="md:pl-10">
-            <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 border shadow-inner flex items-center justify-center">
-              <div className="grid grid-cols-3 gap-3 p-6 w-full">
-                <Stat label="Candidates/Vetted" value="3" sub="per role (typical)" />
-                <Stat label="Avg. Savings" value="60–80%" />
-                <Stat label="Time Zones" value="EST/CST/PST" />
-                <Stat label="Engagement" value="Monthly" sub="simple invoicing" />
-                <Stat label="Replacement" value="Included" sub="if needed" />
-                <Stat label="Languages" value="Bilingual" sub="EN/ES" />
-              </div>
+            <div className="mt-6 flex items-center gap-6 text-sm text-gray-600">
+              <div className="flex items-center gap-2"><Shield size={16}/> U.S.-grade compliance</div>
+              <div className="flex items-center gap-2"><Clock size={16}/> Fast onboarding (1–3 wks)</div>
+              <div className="flex items-center gap-2"><MapPin size={16}/> HQ: Colombia / Puerto Rico</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVICES */}
-      <section id="services" className="border-t bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-semibold">Our Services</h2>
-          <p className="mt-3 text-gray-600 max-w-3xl">
-            End-to-end support: from sourcing to hiring to administration—so your remote team can focus on mission-critical work.
-          </p>
-          <div className="mt-10 grid md:grid-cols-3 gap-6">
-            <ServiceCard icon={<Users className="h-5 w-5" />} title="Sourcing" desc="Search, screening, background checks, interviews, and optional role-specific tests. We introduce the top 3 candidates per role." />
-            <ServiceCard icon={<Briefcase className="h-5 w-5" />} title="Hiring" desc="Once you select the candidate, we handle contracts and onboarding so you can accelerate ramp-up." />
-            <ServiceCard icon={<Shield className="h-5 w-5" />} title="Admin & HR" desc="Payroll, social security, PTO tracking, performance reviews, benefits, equipment, and dedicated account management." />
-          </div>
+      {/* Logos placeholder */}
+      <section className="border-y bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 grid grid-cols-2 md:grid-cols-5 items-center gap-6 opacity-70">
+          <div className="h-8 bg-gray-100 rounded" />
+          <div className="h-8 bg-gray-100 rounded" />
+          <div className="h-8 bg-gray-100 rounded" />
+          <div className="h-8 bg-gray-100 rounded" />
+          <div className="h-8 bg-gray-100 rounded" />
         </div>
       </section>
 
-      {/* WHY FULCRUM */}
-      <section id="why" className="border-t">
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-semibold">Why Fulcrum</h2>
-          <div className="mt-8 grid md:grid-cols-2 gap-10">
-            <ul className="space-y-4 text-gray-700">
+      {/* Services */}
+      <section id="services" className="mx-auto max-w-7xl px-6 py-16">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold">What we do</h2>
+            <p className="mt-3 text-gray-600">Flexible nearshore solutions that plug into your existing workflows. Hire one role or spin up a full pod.</p>
+            <ul className="mt-6 space-y-3">
               {[
-                "Workforce cost reduction by 60–80% without sacrificing quality",
-                "Fully managed services: Recruitment, Admin, and HR",
-                "Bilingual talent aligned to your needs and culture",
-                "Time-zone compatibility (EST, CST, PST)",
-                "Flexible terms with 1-month notice",
-                "No legal responsibility for the contractor",
-                "Improved processes and efficiency",
-                "Simplified engagement and payments via US entity",
+                "Analyst pods for private credit & PE (research, monitoring, compliance)",
+                "Data & engineering squads (ETL, dashboards, AI/ML support)",
+                "Finance ops (accounts, reporting, close support, RevOps)",
+                "Talent acquisition & HR ops (recruiting-as-a-service)",
               ].map((t) => (
-                <li key={t} className="flex gap-2">
-                  <CheckCircle2 className="h-5 w-5 mt-0.5" /><span>{t}</span>
-                </li>
+                <li key={t} className="flex items-start gap-3"><CheckCircle2 className="mt-0.5" size={18}/><span>{t}</span></li>
               ))}
             </ul>
-            <div className="grid grid-cols-2 gap-4">
-              <StepCard n={1} title="Tell us your needs" />
-              <StepCard n={2} title="Meet top candidates" />
-              <StepCard n={3} title="Hire and onboard" />
-              <StepCard n={4} title="We manage admin" />
+          </div>
+          <div className="bg-white rounded-2xl shadow-sm ring-1 ring-gray-200 p-6">
+            <h3 className="font-medium">Engagement models</h3>
+            <div className="mt-4 grid sm:grid-cols-2 gap-4 text-sm">
+              <div className="rounded-xl border p-4">
+                <div className="font-semibold">Dedicated hires</div>
+                <p className="mt-1 text-gray-600">Full-time team members embedded with you. We recruit, you manage. We handle payroll & compliance.</p>
+              </div>
+              <div className="rounded-xl border p-4">
+                <div className="font-semibold">Managed pods</div>
+                <p className="mt-1 text-gray-600">A pod of 2–6 specialists led by a Fulcrum team lead. Outcome-oriented with weekly reporting.</p>
+              </div>
+              <div className="rounded-xl border p-4">
+                <div className="font-semibold">Project sprints</div>
+                <p className="mt-1 text-gray-600">4–8 week sprints for audits, automation, or data builds. Fixed scope, fixed price.</p>
+              </div>
+              <div className="rounded-xl border p-4">
+                <div className="font-semibold">Build-Operate-Transfer</div>
+                <p className="mt-1 text-gray-600">We stand up your nearshore team and transfer it in 6–12 months with training & playbooks.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ROLES */}
-      <section id="roles" className="border-t bg-gray-50">
+      {/* Why */}
+      <section id="why" className="bg-white border-y">
         <div className="mx-auto max-w-7xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-semibold">Roles We Hire</h2>
-          <p className="mt-3 text-gray-600 max-w-3xl">Specialized, bilingual professionals across functions and industries.</p>
-          <div className="mt-10 grid md:grid-cols-3 gap-6">
-            <RoleGroup title="Financial Services" roles={["Financial Analyst", "Accounting Specialist", "Bookkeeper", "Finance Assistant"]} />
-            <RoleGroup title="General Business" roles={["Virtual Assistant", "Community Manager", "Admin Support", "Customer Service"]} />
-            <RoleGroup title="Insurance" roles={["Executive Assistant", "Intake Specialist", "Customer Service Rep"]} />
-            <RoleGroup title="Healthcare" roles={["Staffing Coordinator", "Billing Specialist", "Case Manager", "Virtual Receptionist"]} />
-            <RoleGroup title="Real Estate" roles={["SDR", "Property Manager", "Leads Generator", "Social Media Manager"]} />
-            <RoleGroup title="Software & IT" roles={["IT Support", "Frontend/Backend/Full-stack Dev", "QA", "Data Engineer/Scientist", "UX/UI"]} />
-            <RoleGroup title="Law" roles={["Paralegal", "Legal Service Coordinator", "Intake Specialist", "Case Manager"]} />
-            <RoleGroup title="Marketing & Sales" roles={["Content Writer", "Graphic Designer", "SEO Specialist", "Marketing Specialist", "SDR/BDR", "Account Manager"]} />
+          <h2 className="text-2xl md:text-3xl font-semibold">Why Fulcrum</h2>
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            {[
+              {icon: <Users size={20}/>, title: "Top 5% talent", text: "Elite English, domain-specific skills, and strong U.S. work culture fit."},
+              {icon: <DollarSign size={20}/>, title: "50–70% savings", text: "Lower total cost without lowering the bar on quality or speed."},
+              {icon: <Shield size={20}/>, title: "Operational trust", text: "Compliance, IP, and security practices aligned to U.S. expectations."},
+            ].map(({icon, title, text}) => (
+              <div key={title} className="rounded-2xl border p-5 bg-gradient-to-b from-white to-gray-50">
+                <div className="h-9 w-9 rounded-xl bg-black text-white grid place-items-center">{icon}</div>
+                <div className="mt-3 font-semibold">{title}</div>
+                <p className="mt-1 text-gray-600 text-sm">{text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* PRICING */}
-      <section id="pricing" className="border-t">
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-semibold">Pricing Snapshot</h2>
-          <p className="mt-3 text-gray-600">Transparent monthly ranges include overhead and local fees; exact quote based on role scope and experience.</p>
+      {/* Pricing */}
+      <section id="pricing" className="mx-auto max-w-7xl px-6 py-16">
+        <h2 className="text-2xl md:text-3xl font-semibold">Transparent pricing</h2>
+        <p className="mt-2 text-gray-600">Monthly fees by seniority. Discounts for pods and longer commitments.</p>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
-            <PriceCard role="Assistant (Jr/Mid)" range="$2,000 – $2,850" fee="$2,500 – $3,500" />
-            <PriceCard role="Investment Banking (Analyst/Associate)" range="$2,000 – $4,500" fee="$3,500 – $5,000" />
-            <PriceCard role="Tech & Data (Jr–Sr)" range="$3,000 – $6,000" fee="$3,500 – $5,000" />
-          </div>
-          <p className="mt-4 text-sm text-gray-500">* Ranges include overhead; salary and fees may vary by role and seniority. Final pricing confirmed before engagement.</p>
-        </div>
-      </section>
-
-      {/* PARTNERS */}
-      <section id="partners" className="border-t bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-semibold">Partners</h2>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
-            <LogoBox name="AllTheRooms" />
-            <LogoBox name="Your Logo Here" />
-            <LogoBox name="—" />
-            <LogoBox name="—" />
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" className="border-t">
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-semibold">Contact Us</h2>
-          <div className="mt-6 grid md:grid-cols-2 gap-10">
-            <div className="space-y-3 text-gray-700">
-              <p>Email: <a href="mailto:contact@fulcrumlatam.com" className="underline">contact@fulcrumlatam.com</a></p>
-              <p>US-based invoicing. EST/CST/PST coverage. Bilingual talent.</p>
-              <div className="mt-6">
-                <a href="https://cal.com/" className="px-5 py-3 rounded-xl bg-black text-white inline-flex items-center gap-2">Schedule a call <ArrowRight className="h-4 w-4" /></a>
-              </div>
+          {[
+            {tier: "Junior", price: "$2,500–$3,500/mo", points: ["Analysts, coordinators", "1–2 yrs experience", "English B2–C1"]},
+            {tier: "Mid", price: "$4,000–$6,500/mo", points: ["Associates, engineers", "3–6 yrs experience", "English C1"]},
+            {tier: "Senior", price: "$7,000–$10,000+/mo", points: ["Leads, managers", "7+ yrs experience", "English C1–C2"]},
+          ].map(({tier, price, points}) => (
+            <div key={tier} className="rounded-2xl border p-6 bg-white">
+              <div className="text-sm uppercase tracking-wide text-gray-500">{tier}</div>
+              <div className="mt-1 text-2xl font-semibold">{price}</div>
+              <ul className="mt-4 space-y-2 text-sm text-gray-700">
+                {points.map(p => (
+                  <li key={p} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>{p}</li>
+                ))}
+              </ul>
             </div>
-            <form className="grid grid-cols-1 gap-4">
-              <div className="grid md:grid-cols-2 gap-4">
-                <Input label="First Name" required />
-                <Input label="Last Name" required />
-              </div>
-              <Input label="Email" type="email" required />
-              <Input label="Company Name" />
-              <Textarea label="Message" maxLength={180} />
-              <button type="submit" className="px-5 py-3 rounded-xl bg-black text-white">Send</button>
-              <p className="text-xs text-gray-500">© {new Date().getFullYear()} FulcrumLATAM & Fulcrum US</p>
+          ))}
+        </div>
+      </section>
+
+      {/* Talent */}
+      <section id="talent" className="bg-white border-y">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-semibold">Talent pipeline</h2>
+              <p className="mt-3 text-gray-600">We maintain active pipelines across finance, tech, and operations—screened for English, technical depth, and culture fit. Example roles:</p>
+              <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                {["Credit Analyst","Data Engineer","Full-Stack Dev","Operations Lead","People Ops","Recruiter"].map(r => (
+                  <li key={r} className="rounded-xl border p-3">{r}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl border p-6 bg-gradient-to-b from-white to-gray-50">
+              <div className="font-medium">How we vet</div>
+              <ol className="mt-3 list-decimal list-inside text-sm text-gray-700 space-y-1">
+                <li>Profile review & skills screen</li>
+                <li>English & communication interview</li>
+                <li>Technical/case exercise</li>
+                <li>Reference & background checks</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="mx-auto max-w-7xl px-6 py-16">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold">Tell us what you need</h2>
+            <p className="mt-2 text-gray-600">We’ll reply within one business day with next steps and candidate samples.</p>
+            <form className="mt-6 grid grid-cols-1 gap-3">
+              <input className="rounded-xl border px-4 py-3" placeholder="Full name" />
+              <input className="rounded-xl border px-4 py-3" placeholder="Work email" type="email" />
+              <input className="rounded-xl border px-4 py-3" placeholder="Company" />
+              <textarea className="rounded-xl border px-4 py-3" placeholder="What roles or pod are you trying to fill?" rows={4} />
+              <button type="button" className="rounded-2xl bg-black text-white px-4 py-3 text-sm font-medium shadow-sm hover:opacity-90 inline-flex items-center gap-2">
+                Submit inquiry <ArrowRight size={16} />
+              </button>
+              <p className="text-xs text-gray-500">By submitting, you agree to be contacted about FulcrumLATAM services.</p>
             </form>
           </div>
+          <div className="bg-white rounded-2xl shadow-sm ring-1 ring-gray-200 p-6">
+            <div className="font-medium">SLA & guarantees</div>
+            <ul className="mt-3 space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2"><CheckCircle2 size={18}/> 3–5 qualified candidates per role within 7–10 business days</li>
+              <li className="flex gap-2"><CheckCircle2 size={18}/> Replacement guarantee during probation</li>
+              <li className="flex gap-2"><CheckCircle2 size={18}/> Weekly status updates and pipeline transparency</li>
+            </ul>
+            <div className="mt-6 text-sm text-gray-600">
+              Prefer email? <a className="underline" href="mailto:hello@fulcrumlatam.co">hello@fulcrumlatam.co</a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <footer className="border-t">
+      {/* Footer */}
+      <footer className="border-t bg-white">
         <div className="mx-auto max-w-7xl px-6 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>© {new Date().getFullYear()} FulcrumLATAM. All rights reserved.</div>
-          <div className="flex gap-4">
-            <a href="#privacy" className="hover:text-black/70">Privacy</a>
-            <a href="#terms" className="hover:text-black/70">Terms</a>
+          <div className="flex items-center gap-4">
+            <a href="#" className="hover:text-gray-900">Privacy</a>
+            <a href="#" className="hover:text-gray-900">Terms</a>
           </div>
         </div>
       </footer>
-    </main>
-  );
-}
-
-/* ------- helpers (defined OUTSIDE the JSX return) ------- */
-
-function LogoBox({ name }: { name: string }) {
-  return (
-    <div className="h-14 rounded-xl border bg-white flex items-center justify-center px-4 text-sm text-gray-600">
-      {name}
     </div>
   );
 }
 
-function Stat({ label, value, sub }: { label: string; value: string; sub?: string }) {
-  return (
-    <div className="rounded-xl border bg-white p-4">
-      <div className="text-xs uppercase tracking-wide text-gray-500">{label}</div>
-      <div className="mt-1 text-2xl font-semibold">{value}</div>
-      {sub && <div className="text-xs text-gray-500 mt-1">{sub}</div>}
-    </div>
-  );
-}
-
-function ServiceCard({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
-  return (
-    <div className="rounded-2xl border p-6 bg-white">
-      <div className="h-10 w-10 rounded-lg border flex items-center justify-center mb-4">{icon}</div>
-      <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="mt-2 text-gray-600">{desc}</p>
-    </div>
-  );
-}
-
-function StepCard({ n, title }: { n: number; title: string }) {
-  return (
-    <div className="rounded-2xl border p-5 bg-white">
-      <div className="h-8 w-8 rounded-full bg-black text-white flex items-center justify-center text-sm font-semibold">{n}</div>
-      <div className="mt-3 font-medium">{title}</div>
-    </div>
-  );
-}
-
-function RoleGroup({ title, roles }: { title: string; roles: string[] }) {
-  return (
-    <div className="rounded-2xl border p-6 bg-white">
-      <div className="font-semibold">{title}</div>
-      <ul className="mt-3 space-y-1 text-gray-600 text-sm">
-        {roles.map((r) => (
-          <li key={r} className="flex gap-2"><span>•</span><span>{r}</span></li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function PriceCard({ role, range, fee }: { role: string; range: string; fee: string }) {
-  return (
-    <div className="rounded-2xl border p-6 bg-white">
-      <div className="font-semibold">{role}</div>
-      <div className="mt-2 text-2xl font-semibold">{range}</div>
-      <div className="mt-1 text-sm text-gray-600">Recruitment fee: {fee}</div>
-    </div>
-  );
-}
-
-function Input({ label, required, type = "text" }: { label: string; required?: boolean; type?: string }) {
-  return (
-    <label className="block text-sm">
-      <span className="text-gray-700">
-        {label}{required && <span className="text-red-500"> *</span>}
-      </span>
-      <input type={type} required={required} className="mt-1 w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black/10" />
-    </label>
-  );
-}
-
-function Textarea({ label, maxLength }: { label: string; maxLength?: number }) {
-  return (
-    <label className="block text-sm">
-      <span className="text-gray-700">{label}</span>
-      <textarea maxLength={maxLength} rows={4} className="mt-1 w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black/10" />
-      {maxLength && <span className="text-xs text-gray-500">0 / {maxLength}</span>}
-    </label>
-  );
-}
