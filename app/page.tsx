@@ -207,6 +207,14 @@ export default function FulcrumLatamLanding() {
   );
 }
 
+function LogoBox({ name }: { name: string }) {
+  return (
+    <div className="h-14 rounded-xl border bg-white flex items-center justify-center px-4 text-sm text-gray-600">
+      {name}
+    </div>
+  );
+}
+
 function Stat({ label, value, sub }: { label: string; value: string; sub?: string }) {
   return (
     <div className="rounded-xl border bg-white p-4">
