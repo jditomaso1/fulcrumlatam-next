@@ -145,16 +145,24 @@ export default function FulcrumLatamLanding() {
           <p className="mt-4 text-sm text-gray-500">* Ranges include overhead; salary and fees may vary by role and seniority. Final pricing confirmed before engagement.</p>
         </div>
       </section>
-
-      {/* PARTNERS */}
+      
+      function LogoBox({ src, alt }: { src: string; alt: string }) {
+        return (
+          <div className="h-14 rounded-xl border bg-white flex items-center justify-center p-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={src} alt={alt} className="max-h-10 max-w-[120px] object-contain" />
+          </div>
+        );
+      }
+      {/* Partners */}
       <section id="partners" className="border-t bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Partners</h2>
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
-            <LogoBox name="AllTheRooms"/>
-            <LogoBox name="Your Logo Here"/>
-            <LogoBox name="—"/>
-            <LogoBox name="—"/>
+            <LogoBox name="AllTheRooms" />
+            <LogoBox name="Your Logo Here" />
+            <LogoBox name="—" />
+            <LogoBox name="—" />
           </div>
         </div>
       </section>
