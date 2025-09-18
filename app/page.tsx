@@ -1,11 +1,5 @@
 import React from "react";
-import { CheckCircle2, Globe, Users, Briefcase, CreditCard, Building2, Rocket, Shield, Clock, ArrowRight } from "lucide-react";
-
-// FulcrumLATAM — modern landing page built from existing materials
-// Tech: Next.js/React + Tailwind utility classes
-// Notes:
-// - Wire copy is embedded below; replace with CMS/MDX later if desired.
-// - Gate/private toggle can wrap specific sections based on an env flag.
+import { CheckCircle2, Users, Briefcase, Shield, ArrowRight } from "lucide-react";
 
 export default function FulcrumLatamLanding() {
   return (
@@ -14,7 +8,7 @@ export default function FulcrumLatamLanding() {
       <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-full bg-black"/>
+            <div className="h-8 w-8 rounded-full bg-black" />
             <span className="font-semibold">FulcrumLATAM</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -43,7 +37,9 @@ export default function FulcrumLatamLanding() {
               We collaborate closely with your team to identify and secure top bilingual talent in Latin America—aligned to your role scope, culture, and time zone. Fully managed recruiting, HR, and payroll so you can focus on growth.
             </p>
             <div className="mt-8 flex gap-3">
-              <a href="#contact" className="px-5 py-3 rounded-xl bg-black text-white inline-flex items-center gap-2">Book an intro <ArrowRight className="h-4 w-4"/></a>
+              <a href="#contact" className="px-5 py-3 rounded-xl bg-black text-white inline-flex items-center gap-2">
+                Book an intro <ArrowRight className="h-4 w-4" />
+              </a>
               <a href="#services" className="px-5 py-3 rounded-xl border">See how it works</a>
             </div>
             <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
@@ -51,21 +47,23 @@ export default function FulcrumLatamLanding() {
                 "60–80% workforce cost reduction",
                 "Fully managed: Recruitment, Admin, HR",
                 "EST/CST/PST coverage",
-                "Flexible terms (1‑month notice)",
+                "Flexible terms (1-month notice)",
               ].map((t) => (
-                <div key={t} className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 mt-0.5"/><span>{t}</span></div>
+                <div key={t} className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 mt-0.5" /><span>{t}</span>
+                </div>
               ))}
             </div>
           </div>
           <div className="md:pl-10">
             <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 border shadow-inner flex items-center justify-center">
               <div className="grid grid-cols-3 gap-3 p-6 w-full">
-                <Stat label="Candidates/Vetted" value="3" sub="per role (typical)"/>
-                <Stat label="Avg. Savings" value="60–80%"/>
-                <Stat label="Time Zones" value="EST/CST/PST"/>
-                <Stat label="Engagement" value="Monthly" sub="simple invoicing"/>
-                <Stat label="Replacement" value="Included" sub="if needed"/>
-                <Stat label="Languages" value="Bilingual" sub="EN/ES"/>
+                <Stat label="Candidates/Vetted" value="3" sub="per role (typical)" />
+                <Stat label="Avg. Savings" value="60–80%" />
+                <Stat label="Time Zones" value="EST/CST/PST" />
+                <Stat label="Engagement" value="Monthly" sub="simple invoicing" />
+                <Stat label="Replacement" value="Included" sub="if needed" />
+                <Stat label="Languages" value="Bilingual" sub="EN/ES" />
               </div>
             </div>
           </div>
@@ -76,11 +74,13 @@ export default function FulcrumLatamLanding() {
       <section id="services" className="border-t bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Our Services</h2>
-          <p className="mt-3 text-gray-600 max-w-3xl">End‑to‑end support: from sourcing to hiring to administration—so your remote team can focus on mission‑critical work.</p>
+          <p className="mt-3 text-gray-600 max-w-3xl">
+            End-to-end support: from sourcing to hiring to administration—so your remote team can focus on mission-critical work.
+          </p>
           <div className="mt-10 grid md:grid-cols-3 gap-6">
-            <ServiceCard icon={<Users className="h-5 w-5"/>} title="Sourcing" desc="Search, screening, background checks, interviews, and optional role‑specific tests. We introduce the top 3 candidates per role."/>
-            <ServiceCard icon={<Briefcase className="h-5 w-5"/>} title="Hiring" desc="Once you select the candidate, we handle contracts and onboarding so you can accelerate ramp‑up."/>
-            <ServiceCard icon={<Shield className="h-5 w-5"/>} title="Admin & HR" desc="Payroll, social security, PTO tracking, performance reviews, benefits, equipment, and dedicated account management."/>
+            <ServiceCard icon={<Users className="h-5 w-5" />} title="Sourcing" desc="Search, screening, background checks, interviews, and optional role-specific tests. We introduce the top 3 candidates per role." />
+            <ServiceCard icon={<Briefcase className="h-5 w-5" />} title="Hiring" desc="Once you select the candidate, we handle contracts and onboarding so you can accelerate ramp-up." />
+            <ServiceCard icon={<Shield className="h-5 w-5" />} title="Admin & HR" desc="Payroll, social security, PTO tracking, performance reviews, benefits, equipment, and dedicated account management." />
           </div>
         </div>
       </section>
@@ -95,39 +95,41 @@ export default function FulcrumLatamLanding() {
                 "Workforce cost reduction by 60–80% without sacrificing quality",
                 "Fully managed services: Recruitment, Admin, and HR",
                 "Bilingual talent aligned to your needs and culture",
-                "Time‑zone compatibility (EST, CST, PST)",
-                "Flexible terms with 1‑month notice",
+                "Time-zone compatibility (EST, CST, PST)",
+                "Flexible terms with 1-month notice",
                 "No legal responsibility for the contractor",
                 "Improved processes and efficiency",
                 "Simplified engagement and payments via US entity",
               ].map((t) => (
-                <li key={t} className="flex gap-2"><CheckCircle2 className="h-5 w-5 mt-0.5"/><span>{t}</span></li>
+                <li key={t} className="flex gap-2">
+                  <CheckCircle2 className="h-5 w-5 mt-0.5" /><span>{t}</span>
+                </li>
               ))}
             </ul>
             <div className="grid grid-cols-2 gap-4">
-              <StepCard n={1} title="Tell us your needs"/>
-              <StepCard n={2} title="Meet top candidates"/>
-              <StepCard n={3} title="Hire and onboard"/>
-              <StepCard n={4} title="We manage admin"/>
+              <StepCard n={1} title="Tell us your needs" />
+              <StepCard n={2} title="Meet top candidates" />
+              <StepCard n={3} title="Hire and onboard" />
+              <StepCard n={4} title="We manage admin" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ROLES WE HIRE */}
+      {/* ROLES */}
       <section id="roles" className="border-t bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Roles We Hire</h2>
           <p className="mt-3 text-gray-600 max-w-3xl">Specialized, bilingual professionals across functions and industries.</p>
           <div className="mt-10 grid md:grid-cols-3 gap-6">
-            <RoleGroup title="Financial Services" roles={["Financial Analyst","Accounting Specialist","Bookkeeper","Finance Assistant"]} />
-            <RoleGroup title="General Business" roles={["Virtual Assistant","Community Manager","Admin Support","Customer Service"]} />
-            <RoleGroup title="Insurance" roles={["Executive Assistant","Intake Specialist","Customer Service Rep"]} />
-            <RoleGroup title="Healthcare" roles={["Staffing Coordinator","Billing Specialist","Case Manager","Virtual Receptionist"]} />
-            <RoleGroup title="Real Estate" roles={["SDR","Property Manager","Leads Generator","Social Media Manager"]} />
-            <RoleGroup title="Software & IT" roles={["IT Support","Frontend/Backend/Full‑stack Dev","QA","Data Engineer/Scientist","UX/UI"]} />
-            <RoleGroup title="Law" roles={["Paralegal","Legal Service Coordinator","Intake Specialist","Case Manager"]} />
-            <RoleGroup title="Marketing & Sales" roles={["Content Writer","Graphic Designer","SEO Specialist","Marketing Specialist","SDR/BDR","Account Manager"]} />
+            <RoleGroup title="Financial Services" roles={["Financial Analyst", "Accounting Specialist", "Bookkeeper", "Finance Assistant"]} />
+            <RoleGroup title="General Business" roles={["Virtual Assistant", "Community Manager", "Admin Support", "Customer Service"]} />
+            <RoleGroup title="Insurance" roles={["Executive Assistant", "Intake Specialist", "Customer Service Rep"]} />
+            <RoleGroup title="Healthcare" roles={["Staffing Coordinator", "Billing Specialist", "Case Manager", "Virtual Receptionist"]} />
+            <RoleGroup title="Real Estate" roles={["SDR", "Property Manager", "Leads Generator", "Social Media Manager"]} />
+            <RoleGroup title="Software & IT" roles={["IT Support", "Frontend/Backend/Full-stack Dev", "QA", "Data Engineer/Scientist", "UX/UI"]} />
+            <RoleGroup title="Law" roles={["Paralegal", "Legal Service Coordinator", "Intake Specialist", "Case Manager"]} />
+            <RoleGroup title="Marketing & Sales" roles={["Content Writer", "Graphic Designer", "SEO Specialist", "Marketing Specialist", "SDR/BDR", "Account Manager"]} />
           </div>
         </div>
       </section>
@@ -137,24 +139,16 @@ export default function FulcrumLatamLanding() {
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Pricing Snapshot</h2>
           <p className="mt-3 text-gray-600">Transparent monthly ranges include overhead and local fees; exact quote based on role scope and experience.</p>
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            <PriceCard role="Assistant (Jr/Mid)" range="$2,000 – $2,850" fee="$2,500 – $3,500"/>
-            <PriceCard role="Investment Banking (Analyst/Associate)" range="$2,000 – $4,500" fee="$3,500 – $5,000"/>
-            <PriceCard role="Tech & Data (Jr–Sr)" range="$3,000 – $6,000" fee="$3,500 – $5,000"/>
+        <div className="mt-8 grid md:grid-cols-3 gap-6">
+            <PriceCard role="Assistant (Jr/Mid)" range="$2,000 – $2,850" fee="$2,500 – $3,500" />
+            <PriceCard role="Investment Banking (Analyst/Associate)" range="$2,000 – $4,500" fee="$3,500 – $5,000" />
+            <PriceCard role="Tech & Data (Jr–Sr)" range="$3,000 – $6,000" fee="$3,500 – $5,000" />
           </div>
           <p className="mt-4 text-sm text-gray-500">* Ranges include overhead; salary and fees may vary by role and seniority. Final pricing confirmed before engagement.</p>
         </div>
       </section>
-      
-      function LogoBox({ src, alt }: { src: string; alt: string }) {
-        return (
-          <div className="h-14 rounded-xl border bg-white flex items-center justify-center p-3">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} alt={alt} className="max-h-10 max-w-[120px] object-contain" />
-          </div>
-        );
-      }
-      {/* Partners */}
+
+      {/* PARTNERS */}
       <section id="partners" className="border-t bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Partners</h2>
@@ -176,7 +170,7 @@ export default function FulcrumLatamLanding() {
               <p>Email: <a href="mailto:contact@fulcrumlatam.com" className="underline">contact@fulcrumlatam.com</a></p>
               <p>US-based invoicing. EST/CST/PST coverage. Bilingual talent.</p>
               <div className="mt-6">
-                <a href="https://cal.com/" className="px-5 py-3 rounded-xl bg-black text-white inline-flex items-center gap-2">Schedule a call <ArrowRight className="h-4 w-4"/></a>
+                <a href="https://cal.com/" className="px-5 py-3 rounded-xl bg-black text-white inline-flex items-center gap-2">Schedule a call <ArrowRight className="h-4 w-4" /></a>
               </div>
             </div>
             <form className="grid grid-cols-1 gap-4">
@@ -206,6 +200,8 @@ export default function FulcrumLatamLanding() {
     </main>
   );
 }
+
+/* ------- helpers (defined OUTSIDE the JSX return) ------- */
 
 function LogoBox({ name }: { name: string }) {
   return (
@@ -270,7 +266,9 @@ function PriceCard({ role, range, fee }: { role: string; range: string; fee: str
 function Input({ label, required, type = "text" }: { label: string; required?: boolean; type?: string }) {
   return (
     <label className="block text-sm">
-      <span className="text-gray-700">{label}{required && <span className="text-red-500"> *</span>}</span>
+      <span className="text-gray-700">
+        {label}{required && <span className="text-red-500"> *</span>}
+      </span>
       <input type={type} required={required} className="mt-1 w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black/10" />
     </label>
   );
