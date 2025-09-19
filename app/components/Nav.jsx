@@ -2,7 +2,6 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export default function Nav() {
   return (
@@ -24,7 +23,7 @@ export default function Nav() {
           href="/contact"
           className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
         >
-          Get started <ArrowRight size={16} />
+          Get started
         </Link>
       </div>
     </header>
