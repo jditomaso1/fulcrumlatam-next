@@ -4,7 +4,6 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, MapPin, Clock, Shield, Users, DollarSign } from "lucide-react";
 
 export default function FulcrumLatamLanding() {
-
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Nav */}
@@ -19,7 +18,7 @@ export default function FulcrumLatamLanding() {
             />
           </div>
 
-          {/* ✅ Cleaned-up nav */}
+          {/* Nav */}
           <nav className="hidden md:flex items-center gap-6 text-[18px]">
             <Link href="#services" className="hover:text-black/70">Services</Link>
             <Link href="#why" className="hover:text-black/70">Why Fulcrum</Link>
@@ -28,7 +27,7 @@ export default function FulcrumLatamLanding() {
             <Link href="#contact" className="hover:text-black/70">Contact</Link>
           </nav>
 
-          {/* ✅ CTA also uses hybrid link */}
+          {/* CTA */}
           <Link
             href="#contact"
             className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
@@ -50,12 +49,12 @@ export default function FulcrumLatamLanding() {
               FulcrumLATAM recruits, vets, and manages high-caliber talent in Colombia and across LATAM for U.S. firms—finance, data, engineering, operations, and more.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
+              <Link href="#contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
                 Book an intro call <ArrowRight size={16} />
-              </a>
-              <a href="#services" className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100">
+              </Link>
+              <Link href="#services" className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100">
                 Explore services
-              </a>
+              </Link>
             </div>
             <div className="mt-6 flex items-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2"><Shield size={16}/> U.S.-grade compliance</div>
@@ -231,4 +230,3 @@ export default function FulcrumLatamLanding() {
     </div>
   );
 }
-
