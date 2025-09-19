@@ -19,7 +19,9 @@ export default function FulcrumLatamLanding() {
             <Link href="/services" className="hover:text-black/70">
               Services
             </Link>
-            <a href="#why" className="hover:text-black/70">Why Fulcrum</a>
+            <Link href="/why" className="hover:text-black/70">
+              Why Fulcrum
+            </Link>
             <a href="#pricing" className="hover:text-black/70">Pricing</a>
             <a href="#talent" className="hover:text-black/70">Talent</a>
             <a href="#contact" className="hover:text-black/70">Contact</a>
