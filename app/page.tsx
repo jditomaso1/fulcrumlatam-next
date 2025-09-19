@@ -2,9 +2,16 @@
 
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ArrowRight, CheckCircle2, MapPin, Clock, Shield, Users, DollarSign } from "lucide-react";
 
 export default function FulcrumLatamLanding() {
+  const pathname = usePathname();
+  const onHome = pathname === "/";
+
+  // helper: if on homepage, scroll to section; otherwise go to full page
+  const link = (path, hash) => (onHome ? hash : path);
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Nav */}
@@ -12,22 +19,39 @@ export default function FulcrumLatamLanding() {
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <div className="flex items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
-              src="/fulcrum-logo.png" 
-              alt="Fulcrum LATAM" 
-              className="h-24 w-auto" 
+            <img
+              src="/fulcrum-logo.png"
+              alt="Fulcrum LATAM"
+              className="h-24 w-auto"
             />
           </div>
+
+          {/* ✅ Cleaned-up nav */}
           <nav className="hidden md:flex items-center gap-6 text-[18px]">
-            <Link href="/services" className="hover:text-black/70">Services</Link>
-            <a href="#why" className="hover:text-black/70">Why Fulcrum</a>
-            <a href="#pricing" className="hover:text-black/70">Pricing</a>
-            <a href="#talent" className="hover:text-black/70">Talent</a>
-            <a href="#contact" className="hover:text-black/70">Contact</a>
+            <Link href={link("/services", "#services")} className="hover:text-black/70">
+              Services
+            </Link>
+            <Link href={link("/why-fulcrum", "#why")} className="hover:text-black/70">
+              Why Fulcrum
+            </Link>
+            <Link href={link("/pricing", "#pricing")} className="hover:text-black/70">
+              Pricing
+            </Link>
+            <Link href={link("/talent", "#talent")} className="hover:text-black/70">
+              Talent
+            </Link>
+            <Link href={link("/contact", "#contact")} className="hover:text-black/70">
+              Contact
+            </Link>
           </nav>
-          <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
+
+          {/* ✅ CTA also uses hybrid link */}
+          <Link
+            href={link("/contact", "#contact")}
+            className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
+          >
             Get started <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
       </header>
 
