@@ -14,7 +14,7 @@ export default function FulcrumLatamLanding() {
             <img 
               src="/fulcrum-logo.png" 
               alt="Fulcrum LATAM" 
-              className="h-10 w-auto" 
+              className="h-16 w-auto" 
             />
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
