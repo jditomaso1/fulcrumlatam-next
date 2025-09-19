@@ -9,9 +9,13 @@ export default function FulcrumLatamLanding() {
       {/* Nav */}
       <header className="sticky top-0 z-30 bg-white/80 backdrop-blur border-b">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-9 w-9 rounded-2xl bg-black text-white grid place-items-center font-semibold">FL</div>
-            <span className="font-semibold tracking-tight">FulcrumLATAM</span>
+          <div className="flex items-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src="/fulcrum-logo.png" 
+              alt="Fulcrum LATAM" 
+              className="h-10 w-auto" 
+            />
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#services" className="hover:text-black/70">Services</a>
