@@ -33,12 +33,12 @@ export default function FulcrumLatamLanding() {
             </Link>
           </nav>
 
-          <a
-            href="#contact"
+          <Link
+            href="/get-started"
             className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
           >
             Get started <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
       </header>
 
