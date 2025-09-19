@@ -85,7 +85,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Services */}
-      <section id="services" className="mx-auto max-w-7xl px-6 py-16">
+      <section id="services" className="scroll-mt-28 mx-auto max-w-7xl px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold">What we do</h2>
@@ -126,7 +126,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Why */}
-      <section id="why" className="bg-white border-y">
+      <section id="why" className="scroll-mt-28 bg-white border-y">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Why Fulcrum</h2>
           <div className="mt-8 grid md:grid-cols-3 gap-6">
@@ -146,7 +146,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="mx-auto max-w-7xl px-6 py-16">
+      <section id="pricing" className="scroll-mt-28 mx-auto max-w-7xl px-6 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold">Transparent pricing</h2>
         <p className="mt-2 text-gray-600">Monthly fees by seniority. Discounts for pods and longer commitments.</p>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
@@ -169,7 +169,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Talent */}
-      <section id="talent" className="bg-white border-y">
+      <section id="talent" className="scroll-mt-28 bg-white border-y">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -195,7 +195,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto max-w-7xl px-6 py-16">
+      <section id="contact" className="scroll-mt-28 mx-auto max-w-7xl px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold">Tell us what you need</h2>
