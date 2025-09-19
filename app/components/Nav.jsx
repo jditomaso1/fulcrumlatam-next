@@ -16,7 +16,7 @@ export default function Nav() {
 
         {/* Nav links + CTA grouped */}
         <div className="flex items-center gap-8">
-          <nav className="hidden md:flex items-center gap-6 text-[18px]">
+          <nav className="hidden md:flex items-center gap-8 text-[18px]">
             <Link href="/services" className="hover:text-black/70">Services</Link>
             <Link href="/why" className="hover:text-black/70">Why Fulcrum</Link>
             <Link href="/pricing" className="hover:text-black/70">Pricing</Link>
