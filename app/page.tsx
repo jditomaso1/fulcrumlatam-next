@@ -215,8 +215,8 @@ export default function FulcrumLatamLanding() {
         <div className="mx-auto max-w-7xl px-6 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>© {new Date().getFullYear()} FulcrumLATAM. All rights reserved.</div>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-gray-900">Privacy</a>
-            <a href="#" className="hover:text-gray-900">Terms</a>
+            <a href="#services" className="hover:text-gray-900">Privacy</a>
+            <a href="#contact" className="hover:text-gray-900">Terms</a>
           </div>
         </div>
       </footer>
