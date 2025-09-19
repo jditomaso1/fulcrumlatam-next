@@ -1,7 +1,7 @@
 // app/page.tsx
 "use client";
 
-import { CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
+import { ArrowRight, CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
 import Link from "next/link";
 
 export default function FulcrumLatamLanding() {
