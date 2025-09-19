@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, CheckCircle2, MapPin, Clock, Shield, Users, DollarSign } from "lucide-react";
+import { ArrowRight, CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
 
 export default function FulcrumLatamLanding() {
   return (
@@ -51,8 +51,8 @@ export default function FulcrumLatamLanding() {
             </div>
             <div className="mt-6 flex items-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2"><Shield size={16}/> U.S.-grade compliance</div>
-              <div className="flex items-center gap-2"><Clock size={16}/> Fast onboarding (1–3 wks)</div>
-              <div className="flex items-center gap-2"><MapPin size={16}/> HQ: Colombia / Puerto Rico</div>
+              <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> Fast onboarding (1–3 wks)</div>
+              <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> HQ: Colombia / Puerto Rico</div>
             </div>
           </div>
         </div>
@@ -70,20 +70,16 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Services */}
-      <section id="services" className="mx-auto max-w-7xl px-6 py-16">
+      <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold">What we do</h2>
             <p className="mt-3 text-gray-600">Flexible nearshore solutions that plug into your existing workflows. Hire one role or spin up a full pod.</p>
             <ul className="mt-6 space-y-3">
-              {[
-                "Analyst pods for private credit & PE (research, monitoring, compliance)",
-                "Data & engineering squads (ETL, dashboards, AI/ML support)",
-                "Finance ops (accounts, reporting, close support, RevOps)",
-                "Talent acquisition & HR ops (recruiting-as-a-service)",
-              ].map((t) => (
-                <li key={t} className="flex items-start gap-3"><CheckCircle2 className="mt-0.5" size={18}/><span>{t}</span></li>
-              ))}
+              <li className="flex items-start gap-3"><CheckCircle2 className="mt-0.5" size={18}/><span>Analyst pods for private credit &amp; PE (research, monitoring, compliance)</span></li>
+              <li className="flex items-start gap-3"><CheckCircle2 className="mt-0.5" size={18}/><span>Data &amp; engineering squads (ETL, dashboards, AI/ML support)</span></li>
+              <li className="flex items-start gap-3"><CheckCircle2 className="mt-0.5" size={18}/><span>Finance ops (accounts, reporting, close support, RevOps)</span></li>
+              <li className="flex items-start gap-3"><CheckCircle2 className="mt-0.5" size={18}/><span>Talent acquisition &amp; HR ops (recruiting-as-a-service)</span></li>
             </ul>
           </div>
           <div className="bg-white rounded-2xl shadow-sm ring-1 ring-gray-200 p-6">
@@ -91,7 +87,7 @@ export default function FulcrumLatamLanding() {
             <div className="mt-4 grid sm:grid-cols-2 gap-4 text-sm">
               <div className="rounded-xl border p-4">
                 <div className="font-semibold">Dedicated hires</div>
-                <p className="mt-1 text-gray-600">Full-time team members embedded with you. We recruit, you manage. We handle payroll & compliance.</p>
+                <p className="mt-1 text-gray-600">Full-time team members embedded with you. We recruit, you manage. We handle payroll &amp; compliance.</p>
               </div>
               <div className="rounded-xl border p-4">
                 <div className="font-semibold">Managed pods</div>
@@ -103,7 +99,7 @@ export default function FulcrumLatamLanding() {
               </div>
               <div className="rounded-xl border p-4">
                 <div className="font-semibold">Build-Operate-Transfer</div>
-                <p className="mt-1 text-gray-600">We stand up your nearshore team and transfer it in 6–12 months with training & playbooks.</p>
+                <p className="mt-1 text-gray-600">We stand up your nearshore team and transfer it in 6–12 months with training &amp; playbooks.</p>
               </div>
             </div>
           </div>
@@ -111,68 +107,87 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Why */}
-      <section id="why" className="bg-white border-y">
+      <section className="bg-white border-y">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Why Fulcrum</h2>
           <div className="mt-8 grid md:grid-cols-3 gap-6">
-            {[
-              {icon: <Users size={20}/>, title: "Top 5% talent", text: "Elite English, domain-specific skills, and strong U.S. work culture fit."},
-              {icon: <DollarSign size={20}/>, title: "50–70% savings", text: "Lower total cost without lowering the bar on quality or speed."},
-              {icon: <Shield size={20}/>, title: "Operational trust", text: "Compliance, IP, and security practices aligned to U.S. expectations."},
-            ].map(({icon, title, text}) => (
-              <div key={title} className="rounded-2xl border p-5 bg-gradient-to-b from-white to-gray-50">
-                <div className="h-9 w-9 rounded-xl bg-black text-white grid place-items-center">{icon}</div>
-                <div className="mt-3 font-semibold">{title}</div>
-                <p className="mt-1 text-gray-600 text-sm">{text}</p>
-              </div>
-            ))}
+            <div className="rounded-2xl border p-5 bg-gradient-to-b from-white to-gray-50">
+              <div className="h-9 w-9 rounded-xl bg-black text-white grid place-items-center"><Users size={20}/></div>
+              <div className="mt-3 font-semibold">Top 5% talent</div>
+              <p className="mt-1 text-gray-600 text-sm">Elite English, domain-specific skills, and strong U.S. work culture fit.</p>
+            </div>
+            <div className="rounded-2xl border p-5 bg-gradient-to-b from-white to-gray-50">
+              <div className="h-9 w-9 rounded-xl bg-black text-white grid place-items-center"><DollarSign size={20}/></div>
+              <div className="mt-3 font-semibold">50–70% savings</div>
+              <p className="mt-1 text-gray-600 text-sm">Lower total cost without lowering the bar on quality or speed.</p>
+            </div>
+            <div className="rounded-2xl border p-5 bg-gradient-to-b from-white to-gray-50">
+              <div className="h-9 w-9 rounded-xl bg-black text-white grid place-items-center"><Shield size={20}/></div>
+              <div className="mt-3 font-semibold">Operational trust</div>
+              <p className="mt-1 text-gray-600 text-sm">Compliance, IP, and security practices aligned to U.S. expectations.</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="mx-auto max-w-7xl px-6 py-16">
+      <section className="mx-auto max-w-7xl px-6 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold">Transparent pricing</h2>
         <p className="mt-2 text-gray-600">Monthly fees by seniority. Discounts for pods and longer commitments.</p>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
-          {[
-            {tier: "Junior", price: "$2,500–$3,500/mo", points: ["Analysts, coordinators", "1–2 yrs experience", "English B2–C1"]},
-            {tier: "Mid", price: "$4,000–$6,500/mo", points: ["Associates, engineers", "3–6 yrs experience", "English C1"]},
-            {tier: "Senior", price: "$7,000–$10,000+/mo", points: ["Leads, managers", "7+ yrs experience", "English C1–C2"]},
-          ].map(({tier, price, points}) => (
-            <div key={tier} className="rounded-2xl border p-6 bg-white">
-              <div className="text-sm uppercase tracking-wide text-gray-500">{tier}</div>
-              <div className="mt-1 text-2xl font-semibold">{price}</div>
-              <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                {points.map(p => (
-                  <li key={p} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>{p}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="rounded-2xl border p-6 bg-white">
+            <div className="text-sm uppercase tracking-wide text-gray-500">Junior</div>
+            <div className="mt-1 text-2xl font-semibold">$2,500–$3,500/mo</div>
+            <ul className="mt-4 space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>Analysts, coordinators</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>1–2 yrs experience</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>English B2–C1</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl border p-6 bg-white">
+            <div className="text-sm uppercase tracking-wide text-gray-500">Mid</div>
+            <div className="mt-1 text-2xl font-semibold">$4,000–$6,500/mo</div>
+            <ul className="mt-4 space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>Associates, engineers</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>3–6 yrs experience</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>English C1</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl border p-6 bg-white">
+            <div className="text-sm uppercase tracking-wide text-gray-500">Senior</div>
+            <div className="mt-1 text-2xl font-semibold">$7,000–$10,000+/mo</div>
+            <ul className="mt-4 space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>Leads, managers</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>7+ yrs experience</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5" size={18}/>English C1–C2</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* Talent */}
-      <section id="talent" className="bg-white border-y">
+      <section className="bg-white border-y">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-semibold">Talent pipeline</h2>
               <p className="mt-3 text-gray-600">We maintain active pipelines across finance, tech, and operations—screened for English, technical depth, and culture fit. Example roles:</p>
               <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-                {["Credit Analyst","Data Engineer","Full-Stack Dev","Operations Lead","People Ops","Recruiter"].map(r => (
-                  <li key={r} className="rounded-xl border p-3">{r}</li>
-                ))}
+                <li className="rounded-xl border p-3">Credit Analyst</li>
+                <li className="rounded-xl border p-3">Data Engineer</li>
+                <li className="rounded-xl border p-3">Full-Stack Dev</li>
+                <li className="rounded-xl border p-3">Operations Lead</li>
+                <li className="rounded-xl border p-3">People Ops</li>
+                <li className="rounded-xl border p-3">Recruiter</li>
               </ul>
             </div>
             <div className="rounded-2xl border p-6 bg-gradient-to-b from-white to-gray-50">
               <div className="font-medium">How we vet</div>
               <ol className="mt-3 list-decimal list-inside text-sm text-gray-700 space-y-1">
-                <li>Profile review & skills screen</li>
-                <li>English & communication interview</li>
+                <li>Profile review &amp; skills screen</li>
+                <li>English &amp; communication interview</li>
                 <li>Technical/case exercise</li>
-                <li>Reference & background checks</li>
+                <li>Reference &amp; background checks</li>
               </ol>
             </div>
           </div>
@@ -180,7 +195,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto max-w-7xl px-6 py-16">
+      <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold">Tell us what you need</h2>
@@ -197,7 +212,7 @@ export default function FulcrumLatamLanding() {
             </form>
           </div>
           <div className="bg-white rounded-2xl shadow-sm ring-1 ring-gray-200 p-6">
-            <div className="font-medium">SLA & guarantees</div>
+            <div className="font-medium">SLA &amp; guarantees</div>
             <ul className="mt-3 space-y-2 text-sm text-gray-700">
               <li className="flex gap-2"><CheckCircle2 size={18}/> 3–5 qualified candidates per role within 7–10 business days</li>
               <li className="flex gap-2"><CheckCircle2 size={18}/> Replacement guarantee during probation</li>
