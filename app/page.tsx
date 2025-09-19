@@ -28,21 +28,11 @@ export default function FulcrumLatamLanding() {
 
           {/* ✅ Cleaned-up nav */}
           <nav className="hidden md:flex items-center gap-6 text-[18px]">
-            <Link href={link("/services", "#services")} className="hover:text-black/70">
-              Services
-            </Link>
-            <Link href={link("/why-fulcrum", "#why")} className="hover:text-black/70">
-              Why Fulcrum
-            </Link>
-            <Link href={link("/pricing", "#pricing")} className="hover:text-black/70">
-              Pricing
-            </Link>
-            <Link href={link("/talent", "#talent")} className="hover:text-black/70">
-              Talent
-            </Link>
-            <Link href={link("/contact", "#contact")} className="hover:text-black/70">
-              Contact
-            </Link>
+            <Link href="#services" className="hover:text-black/70">Services</Link>
+            <Link href="#why" className="hover:text-black/70">Why Fulcrum</Link>
+            <Link href="#pricing" className="hover:text-black/70">Pricing</Link>
+            <Link href="#talent" className="hover:text-black/70">Talent</Link>
+            <Link href="#contact" className="hover:text-black/70">Contact</Link>
           </nav>
 
           {/* ✅ CTA also uses hybrid link */}
