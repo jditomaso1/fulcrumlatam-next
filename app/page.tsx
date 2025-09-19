@@ -1,9 +1,8 @@
 // app/page.tsx
 "use client";
 
-import { ArrowRight, CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
+import { CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export default function FulcrumLatamLanding() {
   return (
@@ -36,9 +35,9 @@ export default function FulcrumLatamLanding() {
 
           <Link
             href="/get-started"
-            className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
+            className="inline-flex items-center justify-center rounded-2xl bg-black text-white px-6 py-3 text-base font-medium shadow-sm hover:opacity-90"
           >
-            Get started <ArrowRight size={16} />
+            Get Started
           </Link>
         </div>
       </header>
