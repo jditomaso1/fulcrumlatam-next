@@ -18,7 +18,7 @@ export default function FulcrumLatamLanding() {
               className="h-24 w-auto" 
             />
           </div>
-          <nav className="hidden md:flex items-center gap-6 text-sm">
+          <nav className="hidden md:flex items-center gap-6 text-lg">
             <Link href="/services" className="hover:text-black/70">Services</Link>
             <a href="#why" className="hover:text-black/70">Why Fulcrum</a>
             <a href="#pricing" className="hover:text-black/70">Pricing</a>
