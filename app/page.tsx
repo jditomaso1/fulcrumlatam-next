@@ -17,11 +17,11 @@ export default function FulcrumLatamLanding() {
           </div>
 
           <nav className="hidden md:flex items-center gap-6 text-[18px]">
-            <a href="/services" className="hover:text-black/70">Services</a>
-            <a href="/why-fulcrum" className="hover:text-black/70">Why Fulcrum</a>
-            <a href="/pricing" className="hover:text-black/70">Pricing</a>
-            <a href="/talent" className="hover:text-black/70">Talent</a>
-            <a href="/contact" className="hover:text-black/70">Contact</a>
+            <a href="#services" className="hover:text-black/70">Services</a>
+            <a href="#why" className="hover:text-black/70">Why Fulcrum</a>
+            <a href="#pricing" className="hover:text-black/70">Pricing</a>
+            <a href="#talent" className="hover:text-black/70">Talent</a>
+            <a href="#contact" className="hover:text-black/70">Contact</a>
           </nav>
 
           <a
