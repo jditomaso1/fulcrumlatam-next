@@ -7,11 +7,12 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-30 bg-white/80 backdrop-blur border-b">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-semibold tracking-tight text-lg">
-          FulcrumLATAM
-        </Link>
+        {/* Logo */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/fulcrum-logo.png" alt="Fulcrum LATAM" className="h-24 w-auto" />
 
-        <nav className="hidden md:flex items-center gap-6 text-sm">
+        {/* Nav links */}
+        <nav className="hidden md:flex items-center gap-6 text-[18px]">
           <Link href="/services" className="hover:text-black/70">Services</Link>
           <Link href="/why" className="hover:text-black/70">Why Fulcrum</Link>
           <Link href="/pricing" className="hover:text-black/70">Pricing</Link>
@@ -19,11 +20,12 @@ export default function Nav() {
           <Link href="/contact" className="hover:text-black/70">Contact</Link>
         </nav>
 
+        {/* CTA */}
         <Link
-          href="/contact"
-          className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
+          href="/get-started"
+          className="inline-flex items-center justify-center rounded-2xl bg-black text-white px-6 py-3 text-base font-medium shadow-sm hover:opacity-90"
         >
-          Get started
+          Get Started
         </Link>
       </div>
     </header>
