@@ -1,5 +1,5 @@
 import "./globals.css";
-import Nav from "../components/Nav"; // 👈 add this import
+import Nav from "./components/Nav";  // ⬅️ changed
 
 export const metadata = {
   title: "FulcrumLATAM — Nearshore teams that move faster and cost less",
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="text-gray-900 bg-gray-50">
-        <Nav />   {/* 👈 nav bar shows up above every page */}
+        <Nav />
         {children}
       </body>
     </html>
