@@ -2,6 +2,7 @@
 "use client";
 
 import { ArrowRight, CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
+import Link from "next/link";
 
 export default function FulcrumLatamLanding() {
   return (
@@ -15,7 +16,9 @@ export default function FulcrumLatamLanding() {
           </div>
 
           <nav className="hidden md:flex items-center gap-6 text-[18px]">
-            <a href="#services" className="hover:text-black/70">Services</a>
+            <Link href="/services" className="hover:text-black/70">
+              Services
+            </Link>
             <a href="#why" className="hover:text-black/70">Why Fulcrum</a>
             <a href="#pricing" className="hover:text-black/70">Pricing</a>
             <a href="#talent" className="hover:text-black/70">Talent</a>
