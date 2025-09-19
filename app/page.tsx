@@ -1,16 +1,9 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { ArrowRight, CheckCircle2, MapPin, Clock, Shield, Users, DollarSign } from "lucide-react";
 
 export default function FulcrumLatamLanding() {
-  const pathname = usePathname();
-  const onHome = pathname === "/";
-
-  // helper: if on homepage, scroll to section; otherwise go to full page
-  const link = (path, hash) => (onHome ? hash : path);
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
@@ -37,7 +30,7 @@ export default function FulcrumLatamLanding() {
 
           {/* ✅ CTA also uses hybrid link */}
           <Link
-            href={link("/contact", "#contact")}
+            href="#contact"
             className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
           >
             Get started <ArrowRight size={16} />
