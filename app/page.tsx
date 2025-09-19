@@ -1,3 +1,4 @@
+// app/page.tsx
 "use client";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -25,7 +26,7 @@ export default function FulcrumLatamLanding() {
           </nav>
 
           <a
-            href="/contact"
+            href="#contact"
             className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
           >
             Get started <ArrowRight size={16} />
@@ -45,10 +46,10 @@ export default function FulcrumLatamLanding() {
               FulcrumLATAM recruits, vets, and manages high-caliber talent in Colombia and across LATAM for U.S. firms—finance, data, engineering, operations, and more.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="/contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
+              <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
                 Book an intro call <ArrowRight size={16} />
               </a>
-              <a href="/services" className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100">
+              <a href="#services" className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100">
                 Explore services
               </a>
             </div>
@@ -73,7 +74,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Services */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
+      <section id="services" className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold">What we do</h2>
@@ -110,7 +111,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Why */}
-      <section className="bg-white border-y">
+      <section id="why" className="bg-white border-y">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Why Fulcrum</h2>
           <div className="mt-8 grid md:grid-cols-3 gap-6">
@@ -134,7 +135,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Pricing */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
+      <section id="pricing" className="mx-auto max-w-7xl px-6 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold">Transparent pricing</h2>
         <p className="mt-2 text-gray-600">Monthly fees by seniority. Discounts for pods and longer commitments.</p>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
@@ -169,7 +170,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Talent */}
-      <section className="bg-white border-y">
+      <section id="talent" className="bg-white border-y">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -198,7 +199,7 @@ export default function FulcrumLatamLanding() {
       </section>
 
       {/* Contact */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
+      <section id="contact" className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold">Tell us what you need</h2>
@@ -233,8 +234,7 @@ export default function FulcrumLatamLanding() {
         <div className="mx-auto max-w-7xl px-6 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>© {new Date().getFullYear()} FulcrumLATAM. All rights reserved.</div>
           <div className="flex items-center gap-4">
-            <a href="/privacy" className="hover:text-gray-900">Privacy</a>
-            <a href="/terms" className="hover:text-gray-900">Terms</a>
+            <a href="#contact" className="hover:text-gray-900">Contact</a>
           </div>
         </div>
       </footer>
