@@ -9,7 +9,10 @@ export default function Nav() {
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/fulcrum-logo.png" alt="Fulcrum LATAM" className="h-24 w-auto" />
+        <Link href="/" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/fulcrum-logo.png" alt="Fulcrum LATAM" className="h-24 w-auto" />
+        </Link>
 
         {/* Nav links */}
         <nav className="hidden md:flex items-center gap-6 text-[18px]">
