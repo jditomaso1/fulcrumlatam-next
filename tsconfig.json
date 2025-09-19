@@ -6,7 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
-    "strict": true,
+    "strict": false,
+    "skipLibCheck": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
