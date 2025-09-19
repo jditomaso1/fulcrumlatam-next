@@ -17,7 +17,7 @@ export default function GetStartedPage() {
           href="/contact"
           className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-6 py-3 text-base font-medium shadow-sm hover:opacity-90"
         >
-          Start Now <ArrowRight size={20} />
+          Start Now 
         </a>
       </div>
     </main>
