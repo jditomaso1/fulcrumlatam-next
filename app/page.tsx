@@ -1,9 +1,8 @@
 // app/page.tsx
 "use client";
 
-import { ArrowRight, CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
+import { CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export default function FulcrumLatamLanding() {
   return (
@@ -56,7 +55,7 @@ export default function FulcrumLatamLanding() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
-                Book an intro call <ArrowRight size={16} />
+                Book an intro call 
               </a>
               <a href="#services" className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100">
                 Explore services
@@ -219,7 +218,7 @@ export default function FulcrumLatamLanding() {
               <input className="rounded-xl border px-4 py-3" placeholder="Company" />
               <textarea className="rounded-xl border px-4 py-3" placeholder="What roles or pod are you trying to fill?" rows={4} />
               <button type="button" className="rounded-2xl bg-black text-white px-4 py-3 text-sm font-medium shadow-sm hover:opacity-90 inline-flex items-center gap-2">
-                Submit inquiry <ArrowRight size={16} />
+                Submit inquiry 
               </button>
               <p className="text-xs text-gray-500">By submitting, you agree to be contacted about FulcrumLATAM services.</p>
             </form>
