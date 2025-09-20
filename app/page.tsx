@@ -35,14 +35,37 @@ export default function FulcrumLatamLanding() {
         </div>
       </section>
 
-      {/* Logos placeholder */}
+      {/* Logos — Trusted by */}
       <section className="border-y bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-10 grid grid-cols-2 md:grid-cols-5 items-center gap-6 opacity-70">
-          <div className="h-8 bg-gray-100 rounded" />
-          <div className="h-8 bg-gray-100 rounded" />
-          <div className="h-8 bg-gray-100 rounded" />
-          <div className="h-8 bg-gray-100 rounded" />
-          <div className="h-8 bg-gray-100 rounded" />
+        <div className="mx-auto max-w-7xl px-6 py-8">
+          <p className="text-xs uppercase tracking-wide text-gray-500 mb-4">
+            Trusted by leaders in finance, data, and operations
+          </p>
+      
+          <ul
+            className="
+              grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6
+              items-center justify-items-center gap-x-8 gap-y-6
+              opacity-80
+            "
+            aria-label="Trusted by"
+          >
+            {[
+              { src: "/logos/rule-1-ventures.svg", alt: "Rule 1 Ventures" },
+            ].map((logo) => (
+              <li key={logo.alt} className="w-full flex items-center justify-center">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="
+                    h-8 md:h-10 w-auto object-contain
+                    grayscale contrast-125 opacity-70
+                    hover:opacity-100 transition
+                  "
+                />
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
