@@ -51,7 +51,7 @@ export default function FulcrumLatamLanding() {
             aria-label="Trusted by"
           >
             {[
-              { src: "/logos/rule-1-ventures.svg", alt: "Rule 1 Ventures" },
+              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures" },
             ].map((logo) => (
               <li key={logo.alt} className="w-full flex items-center justify-center">
                 <img
