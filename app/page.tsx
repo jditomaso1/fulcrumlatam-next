@@ -63,8 +63,8 @@ export default function FulcrumLatamLanding() {
                   src={logo.src}
                   alt={logo.alt}
                   className="
-                    h-8 md:h-10 w-auto object-contain
-                    grayscale contrast-125 opacity-70
+                    max-h-12 md:max-h-16 w-auto object-contain
+                    grayscale contrast-125 opacity-80
                     hover:opacity-100 transition
                   "
                 />
