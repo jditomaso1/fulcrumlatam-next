@@ -54,12 +54,12 @@ export default function FulcrumLatamLanding() {
               // Per-logo controls:
               // - liClass: controls the CELL height (alignment box)
               // - imgClass: controls the IMAGE max height
-              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", liClass: "h-16", imgClass: "max-h-12 md:max-h-14" },
-              { src: "/logos/sio.png",              alt: "Sio",             liClass: "h-16", imgClass: "max-h-10 md:max-h-12" },
+              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", liClass: "h-16", imgClass: "max-h-16 md:max-h-16" },
+              { src: "/logos/sio.png",              alt: "Sio",             liClass: "h-16", imgClass: "max-h-16 md:max-h-12" },
               { src: "/logos/co-counselor.png",     alt: "CoCounselor",     liClass: "h-20", imgClass: "max-h-16 md:max-h-20" }, // bigger
-              { src: "/logos/deckard.png",          alt: "Deckard",         liClass: "h-16", imgClass: "max-h-12 md:max-h-14" },
+              { src: "/logos/deckard.png",          alt: "Deckard",         liClass: "h-16", imgClass: "max-h-16 md:max-h-16" },
               { src: "/logos/merritt.png",          alt: "Merritt",         liClass: "h-16", imgClass: "max-h-12 md:max-h-16" },
-              { src: "/logos/lendsmart.png",        alt: "Lendsmart",       liClass: "h-14", imgClass: "max-h-10 md:max-h-12" }, // smaller
+              { src: "/logos/lendsmart.png",        alt: "Lendsmart",       liClass: "h-14", imgClass: "max-h-14 md:max-h-14" }, // smaller
             ].map((logo) => (
               <li
                 key={logo.alt}
