@@ -52,6 +52,10 @@ export default function FulcrumLatamLanding() {
           >
             {[
               { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures" },
+              { src: "/logos/sio.png", alt: "Sio" },
+              { src: "/logos/co-counselor.png", alt: "CoCounselor" },
+              { src: "/logos/deckard.png", alt: "Deckard" },
+              { src: "/logos/lendsmart.png", alt: "Lendsmart" },            
             ].map((logo) => (
               <li key={logo.alt} className="w-full flex items-center justify-center">
                 <img
