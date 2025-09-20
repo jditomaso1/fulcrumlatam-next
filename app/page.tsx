@@ -58,15 +58,16 @@ export default function FulcrumLatamLanding() {
               { src: "/logos/merritt.png", alt: "Merritt", className: "max-h-10" }, 
               { src: "/logos/lendsmart.png", alt: "Lendsmart", className: "max-h-14" },             
             ].map((logo) => (
-              <li key={logo.alt} className="w-full flex items-center justify-center h-16">
+              <li key={logo.alt} className="flex items-center justify-center h-16">
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="
+                  className={`
                     w-auto object-contain
                     grayscale contrast-125 opacity-80
                     hover:opacity-100 transition
-                    ${logo.className}
+                    max-h-12 md:max-h-16
+                    ${logo.className ?? ""}   /* <-- per-logo override (optional) */
                   `}
                 />
               </li>
