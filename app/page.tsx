@@ -51,24 +51,22 @@ export default function FulcrumLatamLanding() {
             aria-label="Trusted by"
           >
             {[
-              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", className: "max-h-14" },
-              { src: "/logos/sio.png", alt: "Sio", className: "max-h-12" },
-              { src: "/logos/co-counselor.png", alt: "CoCounselor", className: "max-h-20" },
-              { src: "/logos/deckard.png", alt: "Deckard", className: "max-h-24" },
-              { src: "/logos/merritt.png", alt: "Merritt", className: "max-h-20" }, 
-              { src: "/logos/lendsmart.png", alt: "Lendsmart", className: "max-h-14" },             
+              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", className: "max-h-14 h-16" },
+              { src: "/logos/sio.png", alt: "Sio", className: "max-h-12 h-16" },
+              { src: "/logos/co-counselor.png", alt: "CoCounselor", className: "max-h-20 h-16" },
+              { src: "/logos/deckard.png", alt: "Deckard", className: "max-h-24 h-16" },
+              { src: "/logos/merritt.png", alt: "Merritt", className: "max-h-20 h-16" }, 
+              { src: "/logos/lendsmart.png", alt: "Lendsmart", className: "max-h-14 h-16" },             
             ].map((logo) => (
-              <li key={logo.alt} className="flex items-center justify-center h-16">
+              <li key={logo.alt} className={`flex items-center justify-center ${logo.className}`}>
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className={`
+                  className="
                     w-auto object-contain
                     grayscale contrast-125 opacity-80
                     hover:opacity-100 transition
-                    max-h-12 md:max-h-16
-                    ${logo.className ?? ""}   /* <-- per-logo override (optional) */
-                  `}
+                  "
                 />
               </li>
             ))}
