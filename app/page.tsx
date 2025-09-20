@@ -45,7 +45,7 @@ export default function FulcrumLatamLanding() {
           <ul
             className="
               grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6
-              items-center justify-items-center gap-x-8 gap-y-6
+              items-center justify-items-center gap-x-4 gap-y-4
               opacity-80
             "
             aria-label="Trusted by"
