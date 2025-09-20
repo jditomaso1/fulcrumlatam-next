@@ -53,7 +53,7 @@ export default function FulcrumLatamLanding() {
             {[
               { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", className: "max-h-14" },
               { src: "/logos/sio.png", alt: "Sio", className: "max-h-12" },
-              { src: "/logos/co-counselor.png", alt: "CoCounselor", className: "max-h-16" },
+              { src: "/logos/co-counselor.png", alt: "CoCounselor", className: "max-h-20" },
               { src: "/logos/deckard.png", alt: "Deckard", className: "max-h-12" },
               { src: "/logos/merritt.png", alt: "Merritt", className: "max-h-10" }, 
               { src: "/logos/lendsmart.png", alt: "Lendsmart", className: "max-h-14" },             
