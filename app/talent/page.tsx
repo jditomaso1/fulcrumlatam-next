@@ -7,14 +7,26 @@ import { CheckCircle2, Shield, Users, DollarSign } from "lucide-react";
 export default function TalentPage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      {/* Hero (match homepage look) */}
+      {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-          <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">Talent</h1>
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
+              <span className="underline decoration-4 decoration-amber-400 underline-offset-4">
+                Talent
+              </span>
+            </h1>
             <p className="mt-4 text-lg text-gray-600">
-              We maintain active pipelines across finance, data/engineering, and operations—screened for English, technical depth, and culture fit.
+              We maintain active pipelines across finance, data/engineering, and
+              operations—screened for English, technical depth, and culture fit.
+            </p>
+            <p className="mt-2 text-base text-gray-500">
+              Every candidate goes through a structured vetting process: English and
+              communication screening, technical/case exercises, and reference checks.
+              Only the top 3–5% move forward to client interviews. This ensures you
+              gain access to professionals who not only meet technical requirements
+              but also integrate seamlessly into U.S. workflows and time zones.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -31,9 +43,15 @@ export default function TalentPage() {
               </Link>
             </div>
             <div className="mt-6 flex items-center gap-6 text-sm text-gray-600">
-              <div className="flex items-center gap-2"><Shield size={16}/> U.S.-grade compliance</div>
-              <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> English-screened (B2–C2)</div>
-              <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> U.S. time zones</div>
+              <div className="flex items-center gap-2">
+                <Shield size={16} /> U.S.-grade compliance
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="inline-block w-4 h-4 rounded-full border" /> English-screened (B2–C2)
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="inline-block w-4 h-4 rounded-full border" /> U.S. time zones
+              </div>
             </div>
           </div>
         </div>
