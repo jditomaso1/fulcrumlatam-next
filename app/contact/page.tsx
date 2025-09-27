@@ -1,125 +1,87 @@
+// app/contact/page.tsx
 "use client";
 
-import { useState } from "react";
+import { CheckCircle2, Shield } from "lucide-react";
 
 export default function ContactPage() {
-  const [name, setName] = useState("");
-  const [company, setCompany] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  // TODO: replace with your real inbox
-  const RECIPIENT = "hello@fulcrumlatam.co";
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const subject = encodeURIComponent(`FulcrumLATAM — Inquiry from ${name || "Website"}`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Company: ${company}`,
-        `Email: ${email}`,
-        "",
-        "Message:",
-        message,
-      ].join("\n")
-    );
-
-    // Opens the user's email client with a prefilled message
-    window.location.href = `mailto:${RECIPIENT}?subject=${subject}&body=${body}`;
-  };
-
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 p-8">
-      <h1 className="text-3xl font-bold mb-4">Contact</h1>
-      <p className="mb-8 text-lg">
-        Tell us what you’re hiring for and your timing. We’ll respond quickly with next steps.
-      </p>
+    <div className="min-h-screen bg-gray-50 text-gray-900">
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
+        <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
+          <div className="max-w-2xl">
+            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">Contact us</h1>
+            <p className="mt-4 text-lg text-gray-600">
+              Tell us what you need and we’ll reply within one business day with next steps and candidate samples.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <div className="grid gap-8 md:grid-cols-2">
+      {/* Contact form + SLA */}
+      <section className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-2 gap-12 items-start">
         {/* Form */}
-        <form onSubmit={handleSubmit} className="rounded-2xl border bg-white p-6 shadow-sm space-y-4">
-          <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="name">Name</label>
-            <input
-              id="name"
-              className="w-full rounded-xl border px-3 py-2 outline-none focus:ring-2"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Your name"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="company">Company</label>
-            <input
-              id="company"
-              className="w-full rounded-xl border px-3 py-2 outline-none focus:ring-2"
-              value={company}
-              onChange={(e) => setCompany(e.target.value)}
-              placeholder="Company, fund, or team"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              className="w-full rounded-xl border px-3 py-2 outline-none focus:ring-2"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@company.com"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="message">Message</label>
+        <div>
+          <h2 className="text-2xl md:text-3xl font-semibold">Tell us what you need</h2>
+          <form className="mt-6 grid grid-cols-1 gap-3">
+            <input className="rounded-xl border px-4 py-3" placeholder="Full name" />
+            <input className="rounded-xl border px-4 py-3" placeholder="Work email" type="email" />
+            <input className="rounded-xl border px-4 py-3" placeholder="Company" />
             <textarea
-              id="message"
-              className="w-full min-h-[140px] rounded-xl border px-3 py-2 outline-none focus:ring-2"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="What roles or skills are you hiring for? Timeline? Team size?"
-              required
+              className="rounded-xl border px-4 py-3"
+              placeholder="What roles or pod are you trying to fill?"
+              rows={4}
             />
-          </div>
+            <button
+              type="button"
+              className="rounded-2xl bg-black text-white px-4 py-3 text-sm font-medium shadow-sm hover:opacity-90 inline-flex items-center gap-2"
+            >
+              Submit inquiry
+            </button>
+            <p className="text-xs text-gray-500">
+              By submitting, you agree to be contacted about FulcrumLATAM services.
+            </p>
+          </form>
+        </div>
 
-          <button
-            type="submit"
-            className="inline-flex items-center justify-center rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
-          >
-            Send email
-          </button>
-
-          <p className="text-xs text-gray-500">
-            This uses your email client via <code>mailto:</code>. For a server-side handler (API route),
-            we can wire one up later.
-          </p>
-        </form>
-
-        {/* Alt contact / details */}
-        <aside className="rounded-2xl border bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-semibold mb-3">Other ways to reach us</h2>
-          <ul className="space-y-2 text-gray-700">
-            <li><span className="font-medium">Email:</span> {RECIPIENT}</li>
-            <li><span className="font-medium">Response time:</span> usually same day</li>
-            <li><span className="font-medium">Hours:</span> Mon–Fri, 9am–6pm (ET)</li>
+        {/* SLA & direct email */}
+        <div className="bg-white rounded-2xl shadow-sm ring-1 ring-gray-200 p-6">
+          <div className="font-medium">SLA &amp; guarantees</div>
+          <ul className="mt-3 space-y-2 text-sm text-gray-700">
+            <li className="flex gap-2"><CheckCircle2 size={18}/> 3–5 qualified candidates per role within 7–10 business days</li>
+            <li className="flex gap-2"><CheckCircle2 size={18}/> Replacement guarantee during probation</li>
+            <li className="flex gap-2"><CheckCircle2 size={18}/> Weekly status updates and pipeline transparency</li>
+            <li className="flex gap-2"><Shield size={18}/> U.S.-grade compliance: background checks, NDAs, device policy</li>
           </ul>
-
-          <div className="mt-6">
-            <h3 className="text-sm font-semibold mb-2">What to include</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
-              <li>Role(s) and core tools/tech</li>
-              <li>Experience range and headcount</li>
-              <li>Timeline and budget range</li>
-            </ul>
+          <div className="mt-6 text-sm text-gray-600">
+            Prefer email?{" "}
+            <a className="underline" href="mailto:hello@fulcrumlatam.co">
+              hello@fulcrumlatam.co
+            </a>
           </div>
-        </aside>
-      </div>
-    </main>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-white border-t">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <div className="rounded-2xl border p-6 bg-gradient-to-b from-white to-gray-50 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <h3 className="text-xl font-semibold">Spin up a nearshore team in 1–3 weeks</h3>
+              <p className="text-gray-600 mt-1 text-sm">
+                We’ll share candidate samples and a simple plan for your first 30 days.
+              </p>
+            </div>
+            <a
+              href="/#contact"
+              className="rounded-2xl bg-black text-white px-4 py-3 text-sm font-medium shadow-sm hover:opacity-90"
+            >
+              Get started
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
