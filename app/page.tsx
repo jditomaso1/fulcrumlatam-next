@@ -42,38 +42,80 @@ export default function FulcrumLatamLanding() {
             Trusted by leaders in finance, data, and operations
           </p>
       
+          {/* Row 1 — 6 logos */}
           <ul
             className="
-              grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6
+              grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6
               items-center justify-items-center gap-x-4 gap-y-4
               opacity-80
             "
-            aria-label="Trusted by"
           >
             {[
-              // Per-logo controls:
-              // - liClass: controls the CELL height (alignment box)
-              // - imgClass: controls the IMAGE max height
-              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", liClass: "h-16", imgClass: "max-h-16 md:max-h-16" },
-              { src: "/logos/sio.png",              alt: "Sio",             liClass: "h-20", imgClass: "max-h-20 md:max-h-20" },
-              { src: "/logos/co-counselor.png",     alt: "CoCounselor",     liClass: "h-18", imgClass: "max-h-21 md:max-h-21" }, // bigger
-              { src: "/logos/deckard.png",          alt: "Deckard",         liClass: "h-24", imgClass: "max-h-24 md:max-h-24" },
-              { src: "/logos/merritt.png",          alt: "Merritt",         liClass: "h-20", imgClass: "max-h-20 md:max-h-19" },
-              { src: "/logos/lendsmart.png",        alt: "Lendsmart",       liClass: "h-20", imgClass: "max-h-24 md:max-h-31" }, // smaller
+              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures" },
+              { src: "/logos/sio.png", alt: "Sio" },
+              { src: "/logos/co-counselor.png", alt: "CoCounselor" },
+              { src: "/logos/deckard.png", alt: "Deckard" },
+              { src: "/logos/merritt.png", alt: "Merritt" },
+              { src: "/logos/lendsmart.png", alt: "Lendsmart" },
             ].map((logo) => (
-              <li
-                key={logo.alt}
-                className={`flex items-center justify-center ${logo.liClass ?? "h-16"}`}
-              >
+              <li key={logo.alt} className="h-20 flex items-center justify-center">
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className={`
-                    w-auto object-contain
-                    grayscale contrast-125 opacity-80
-                    hover:opacity-100 transition
-                    ${logo.imgClass ?? "max-h-12 md:max-h-16"}
-                  `}
+                  className="max-h-16 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition"
+                />
+              </li>
+            ))}
+          </ul>
+      
+          {/* Row 2 — 5 logos */}
+          <ul
+            className="
+              mt-6
+              grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5
+              items-center justify-items-center gap-x-4 gap-y-4
+              opacity-80
+            "
+          >
+            {[
+              { src: "/logos/logo-7.png", alt: "Client 7" },
+              { src: "/logos/logo-8.png", alt: "Client 8" },
+              { src: "/logos/logo-9.png", alt: "Client 9" },
+              { src: "/logos/logo-10.png", alt: "Client 10" },
+              { src: "/logos/logo-11.png", alt: "Client 11" },
+            ].map((logo) => (
+              <li key={logo.alt} className="h-20 flex items-center justify-center">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-h-16 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition"
+                />
+              </li>
+            ))}
+          </ul>
+      
+          {/* Row 3 — 6 logos */}
+          <ul
+            className="
+              mt-6
+              grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6
+              items-center justify-items-center gap-x-4 gap-y-4
+              opacity-80
+            "
+          >
+            {[
+              { src: "/logos/logo-12.png", alt: "Client 12" },
+              { src: "/logos/logo-13.png", alt: "Client 13" },
+              { src: "/logos/logo-14.png", alt: "Client 14" },
+              { src: "/logos/logo-15.png", alt: "Client 15" },
+              { src: "/logos/logo-16.png", alt: "Client 16" },
+              { src: "/logos/logo-17.png", alt: "Client 17" },
+            ].map((logo) => (
+              <li key={logo.alt} className="h-20 flex items-center justify-center">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-h-16 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition"
                 />
               </li>
             ))}
