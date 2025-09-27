@@ -27,50 +27,61 @@ export default function ContactPage() {
               onboarding plan. No sales fluff—just practical next steps to help you move
               faster with the right nearshore talent.
             </p>
+
+            {/* (Optional) feature row for visual consistency with other pages */}
+            <div className="mt-6 flex items-center gap-6 text-sm text-gray-600">
+              <div className="flex items-center gap-2"><Shield size={16}/> U.S.-grade compliance</div>
+              <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> Response &lt; 1 business day</div>
+              <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> HQ: Colombia / Puerto Rico</div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact form + SLA */}
-      <section className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-2 gap-12 items-start">
-        {/* Form */}
-        <div>
-          <h2 className="text-2xl md:text-3xl font-semibold">Tell us what you need</h2>
-          <form className="mt-6 grid grid-cols-1 gap-3">
-            <input className="rounded-xl border px-4 py-3" placeholder="Full name" />
-            <input className="rounded-xl border px-4 py-3" placeholder="Work email" type="email" />
-            <input className="rounded-xl border px-4 py-3" placeholder="Company" />
-            <textarea
-              className="rounded-xl border px-4 py-3"
-              placeholder="What roles or pod are you trying to fill?"
-              rows={4}
-            />
-            <button
-              type="button"
-              className="rounded-2xl bg-black text-white px-4 py-3 text-sm font-medium shadow-sm hover:opacity-90 inline-flex items-center gap-2"
-            >
-              Submit inquiry
-            </button>
-            <p className="text-xs text-gray-500">
-              By submitting, you agree to be contacted about FulcrumLATAM services.
-            </p>
-          </form>
-        </div>
+      {/* Contact form + SLA — now under a divider and white background (matches other pages) */}
+      <section className="bg-white border-y">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Form */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-semibold">Tell us what you need</h2>
+              <form className="mt-6 grid grid-cols-1 gap-3">
+                <input className="rounded-xl border px-4 py-3" placeholder="Full name" />
+                <input className="rounded-xl border px-4 py-3" placeholder="Work email" type="email" />
+                <input className="rounded-xl border px-4 py-3" placeholder="Company" />
+                <textarea
+                  className="rounded-xl border px-4 py-3"
+                  placeholder="What roles or pod are you trying to fill?"
+                  rows={4}
+                />
+                <button
+                  type="button"
+                  className="rounded-2xl bg-black text-white px-4 py-3 text-sm font-medium shadow-sm hover:opacity-90 inline-flex items-center gap-2"
+                >
+                  Submit inquiry
+                </button>
+                <p className="text-xs text-gray-500">
+                  By submitting, you agree to be contacted about FulcrumLATAM services.
+                </p>
+              </form>
+            </div>
 
-        {/* SLA & direct email */}
-        <div className="bg-white rounded-2xl shadow-sm ring-1 ring-gray-200 p-6">
-          <div className="font-medium">SLA &amp; guarantees</div>
-          <ul className="mt-3 space-y-2 text-sm text-gray-700">
-            <li className="flex gap-2"><CheckCircle2 size={18}/> 3–5 qualified candidates per role within 7–10 business days</li>
-            <li className="flex gap-2"><CheckCircle2 size={18}/> Replacement guarantee during probation</li>
-            <li className="flex gap-2"><CheckCircle2 size={18}/> Weekly status updates and pipeline transparency</li>
-            <li className="flex gap-2"><Shield size={18}/> U.S.-grade compliance: background checks, NDAs, device policy</li>
-          </ul>
-          <div className="mt-6 text-sm text-gray-600">
-            Prefer email?{" "}
-            <a className="underline" href="mailto:hello@fulcrumlatam.co">
-              hello@fulcrumlatam.co
-            </a>
+            {/* SLA & direct email */}
+            <div className="bg-white rounded-2xl shadow-sm ring-1 ring-gray-200 p-6">
+              <div className="font-medium">SLA &amp; guarantees</div>
+              <ul className="mt-3 space-y-2 text-sm text-gray-700">
+                <li className="flex gap-2"><CheckCircle2 size={18}/> 3–5 qualified candidates per role within 7–10 business days</li>
+                <li className="flex gap-2"><CheckCircle2 size={18}/> Replacement guarantee during probation</li>
+                <li className="flex gap-2"><CheckCircle2 size={18}/> Weekly status updates and pipeline transparency</li>
+                <li className="flex gap-2"><Shield size={18}/> U.S.-grade compliance: background checks, NDAs, device policy</li>
+              </ul>
+              <div className="mt-6 text-sm text-gray-600">
+                Prefer email?{" "}
+                <a className="underline" href="mailto:hello@fulcrumlatam.co">
+                  hello@fulcrumlatam.co
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
