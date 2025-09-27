@@ -10,11 +10,23 @@ export default function GetStartedPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-          <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">Get started</h1>
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
+              <span className="underline decoration-4 decoration-amber-400 underline-offset-4">
+                Get started
+              </span>
+            </h1>
             <p className="mt-4 text-lg text-gray-600">
-              Ready to spin up a nearshore team? Share a few details and we’ll send candidate samples
-              plus a simple 30-day plan within one business day.
+              Ready to spin up a nearshore team? Share a few details and we’ll send
+              candidate samples plus a simple 30-day plan within one business day.
+            </p>
+            <p className="mt-2 text-base text-gray-500">
+              From the moment you reach out, our team begins sourcing against your
+              requirements—seniority, skills, time zone coverage, and cultural fit.
+              Within 7–10 business days, you’ll receive a curated slate of candidates,
+              along with an onboarding roadmap that outlines your first 30 days. This
+              way, you can move from inquiry to impact without wasting weeks in
+              recruiting cycles.
             </p>
           </div>
         </div>
