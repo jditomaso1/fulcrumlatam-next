@@ -10,10 +10,22 @@ export default function ContactPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-          <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">Contact us</h1>
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
+              Contact{" "}
+              <span className="underline decoration-4 decoration-amber-400 underline-offset-4">
+                Us
+              </span>
+            </h1>
             <p className="mt-4 text-lg text-gray-600">
-              Tell us what you need and we’ll reply within one business day with next steps and candidate samples.
+              Tell us what you need and we’ll reply within one business day with next steps
+              and candidate samples.
+            </p>
+            <p className="mt-2 text-base text-gray-500">
+              Whether you’re exploring one role or planning to scale a full pod, our team
+              will guide you through options, share sample profiles, and outline a simple
+              onboarding plan. No sales fluff—just practical next steps to help you move
+              faster with the right nearshore talent.
             </p>
           </div>
         </div>
