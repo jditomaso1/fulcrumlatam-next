@@ -11,11 +11,25 @@ export default function PricingPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-          <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">Transparent pricing</h1>
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
+              Transparent{" "}
+              <span className="underline decoration-4 decoration-amber-400 underline-offset-4">
+                Pricing
+              </span>
+            </h1>
             <p className="mt-4 text-lg text-gray-600">
               Monthly fees by seniority, with discounts for pods and longer commitments.
             </p>
+            <p className="mt-2 text-base text-gray-500">
+              Our structure keeps things simple: you pay a flat monthly rate based on role
+              seniority, and we handle payroll, compliance, and HR administration. Larger
+              pods (2–6 hires) and multi-quarter contracts qualify for volume discounts,
+              giving you flexibility to scale while locking in cost savings. This means
+              you can start small, prove value, and expand confidently without worrying
+              about hidden fees or overhead surprises.
+            </p>
+      
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="/#contact"
