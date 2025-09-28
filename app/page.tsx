@@ -19,17 +19,24 @@ export default function FulcrumLatamLanding() {
               FulcrumLATAM recruits, vets, and manages high-caliber talent in Colombia and across LATAM for U.S. firms—finance, data, engineering, operations, and more.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90">
-                Book an intro call 
+              <a 
+                href="https://fulcrumlatam.co/contact" 
+                className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
+              >
+                Book an intro call
               </a>
-              <a href="#services" className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100">
+              
+              <a 
+                href="https://fulcrumlatam.co/services" 
+                className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100"
+              >
                 Explore services
               </a>
             </div>
             <div className="mt-6 flex items-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2"><Shield size={16}/> U.S.-grade compliance</div>
               <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> Fast onboarding (1–3 wks)</div>
-              <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> HQ: Colombia / Puerto Rico</div>
+              <div className="flex items-center gap-2"><span className="inline-block w-4 h-4 rounded-full border" /> HQ: New York / Colombia / Puerto Rico</div>
             </div>
           </div>
         </div>
@@ -85,7 +92,7 @@ export default function FulcrumLatamLanding() {
               { src: "/logos/loeb.png", alt: "Lobe Enterprises", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/killcliff.png", alt: "killcliff", liClass: "h-[110px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/kin+carta.png", alt: "kin+carta", liClass: "h-[110px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/acue.png", alt: "acue", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px] },
+              { src: "/logos/acue.png", alt: "acue", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
             ].map((logo) => (
               <li
                 key={logo.alt}
