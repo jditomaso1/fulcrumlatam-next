@@ -48,40 +48,41 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Pricing tiers */}
-      <section className="bg-white border-y">
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            <div className="rounded-2xl border p-6 bg-gradient-to-b from-white to-gray-50">
-              <div className="text-sm uppercase tracking-wide text-gray-500">Junior</div>
-              <div className="mt-1 text-2xl font-semibold">$2,500–$3,500/mo</div>
-              <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> Analysts, coordinators</li>
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> 1–2 yrs experience</li>
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> English B2–C1</li>
-              </ul>
-            </div>
-
-            <div className="rounded-2xl border p-6 bg-gradient-to-b from-white to-gray-50">
-              <div className="text-sm uppercase tracking-wide text-gray-500">Mid</div>
-              <div className="mt-1 text-2xl font-semibold">$4,000–$6,500/mo</div>
-              <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> Associates, engineers</li>
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> 3–6 yrs experience</li>
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> English C1</li>
-              </ul>
-            </div>
-
-            <div className="rounded-2xl border p-6 bg-gradient-to-b from-white to-gray-50">
-              <div className="text-sm uppercase tracking-wide text-gray-500">Senior</div>
-              <div className="mt-1 text-2xl font-semibold">$7,000–$10,000+/mo</div>
-              <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> Leads, managers</li>
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> 7+ yrs experience</li>
-                <li className="flex items-start gap-2"><CheckCircle2 size={18}/> English C1–C2</li>
-              </ul>
-            </div>
+      {/* Pricing */}
+      <section id="pricing" className="mx-auto max-w-7xl px-6 py-16">
+        <h2 className="text-2xl md:text-3xl font-semibold">Talent tiers</h2>
+        <p className="mt-2 text-gray-600">
+          Flexible engagement options by seniority. Discounts available for pods and long-term commitments.
+        </p>
+        <div className="mt-8 grid md:grid-cols-3 gap-6">
+          <div className="rounded-2xl border p-6 bg-white">
+            <div className="text-sm uppercase tracking-wide text-gray-500">Junior</div>
+            <div className="mt-1 text-2xl font-semibold">Analysts & Coordinators</div>
+            <ul className="mt-4 space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>1–2 yrs experience</li>
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>English B2–C1</li>
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>Project-ready support</li>
+            </ul>
           </div>
+          <div className="rounded-2xl border p-6 bg-white">
+            <div className="text-sm uppercase tracking-wide text-gray-500">Mid</div>
+            <div className="mt-1 text-2xl font-semibold">Associates & Engineers</div>
+            <ul className="mt-4 space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>3–6 yrs experience</li>
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>English C1</li>
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>Hands-on execution</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl border p-6 bg-white">
+            <div className="text-sm uppercase tracking-wide text-gray-500">Senior</div>
+            <div className="mt-1 text-2xl font-semibold">Leads & Managers</div>
+            <ul className="mt-4 space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>7+ yrs experience</li>
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>English C1–C2</li>
+              <li className="flex items-start gap-2"><CheckCircle2 size={18}/>Strategic leadership</li>
+            </ul>
+          </div>
+        </div>
 
           <p className="mt-6 text-sm text-gray-600">
             Costs include payroll, compliance, and HR support. Discounts available for pods (2–6 hires) and annual contracts.
