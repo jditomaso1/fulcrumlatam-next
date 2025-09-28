@@ -48,11 +48,6 @@ export default function PricingPage() {
         </div>
       </section>
       
-      {/* Divider strip to match Talent page */}
-      <section className="bg-white border-y">
-        <div className="mx-auto max-w-7xl px-6 py-6" />
-      </section>
-      
       {/* Pricing */}
       <section id="pricing" className="mx-auto max-w-7xl px-6 py-16 bg-white border-t border-gray-200">
         <h2 className="text-2xl md:text-3xl font-semibold">Transparent pricing</h2>
