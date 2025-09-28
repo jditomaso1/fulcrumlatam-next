@@ -54,9 +54,9 @@ export default function FulcrumLatamLanding() {
               { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/sio.png", alt: "Sio", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/co-counselor.png", alt: "CoCounselor", liClass: "h-[90px]", imgClass: "max-h-[80px] max-w-[200px]" },
-              { src: "/logos/deckard.png", alt: "Deckard", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/merritt.png", alt: "Merritt", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/lendsmart.png", alt: "Lendsmart", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/deckard.png", alt: "Deckard", liClass: "h-[90px]", imgClass: "max-h-[90px] max-w-[140px]" },
+              { src: "/logos/merritt.png", alt: "Merritt", liClass: "h-[90px]", imgClass: "max-h-[70px] max-w-[140px]" },
+              { src: "/logos/lendsmart.png", alt: "Lendsmart", liClass: "h-[90px]", imgClass: "max-h-[90px] max-w-[140px]" },
             ].map((logo) => (
               <li
                 key={logo.alt}
