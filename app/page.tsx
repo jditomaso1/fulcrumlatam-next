@@ -9,8 +9,8 @@ export default function FulcrumLatamLanding() {
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
-        <div className="mx-auto max-w-7xl px-10 py-15 md:py-20">
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
+        <div className="mx-auto max-w-7xl px-6 py-18 md:py-20">
           <div className="max-w-2xl">
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
               Nearshore teams that move <span className="underline decoration-4 decoration-amber-400 underline-offset-4">faster</span> and cost <span className="underline decoration-4 decoration-amber-400 underline-offset-4">less</span>.
@@ -25,7 +25,7 @@ export default function FulcrumLatamLanding() {
                 >
                   Book an intro call
                 </Link>
-              
+                
                 <Link 
                   href="/services" 
                   className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100"
