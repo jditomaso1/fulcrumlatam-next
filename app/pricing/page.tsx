@@ -49,7 +49,7 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="mx-auto max-w-7xl px-6 py-16">
+      <section id="pricing" className="mx-auto max-w-7xl px-6 py-16 border-t border-gray-200">  
         <h2 className="text-2xl md:text-3xl font-semibold">Transparent pricing</h2>
         <p className="mt-2 text-gray-600">Monthly fees by seniority. Discounts for pods and longer commitments.</p>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
