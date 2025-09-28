@@ -83,9 +83,9 @@ export default function FulcrumLatamLanding() {
             {[
               { src: "/logos/livly.png", alt: "Livly", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/loeb.png", alt: "Lobe Enterprises", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/killcliff.png", alt: "killcliff", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/kin+carta.png", alt: "kin+carta", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/acue.png", alt: "acue" },
+              { src: "/logos/killcliff.png", alt: "killcliff", liClass: "h-[110px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/kin+carta.png", alt: "kin+carta", liClass: "h-[110px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/acue.png", alt: "acue", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px] },
             ].map((logo) => (
               <li
                 key={logo.alt}
@@ -110,11 +110,11 @@ export default function FulcrumLatamLanding() {
             "
           >
             {[
-              { src: "/logos/nunbelievable.png", alt: "nunbelievable", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/attune.png", alt: "attune", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/nunbelievable.png", alt: "nunbelievable", liClass: "h-[90px]", imgClass: "max-h-[90px] max-w-[140px]" },
+              { src: "/logos/attune.png", alt: "attune", liClass: "h-[90px]", imgClass: "max-h-[100px] max-w-[140px]" },
               { src: "/logos/vestre.png", alt: "vestre", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/asc.png", alt: "asc", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/alltherooms.png", alt: "alltherooms", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/asc.png", alt: "asc", liClass: "h-[90px]", imgClass: "max-h-[80px] max-w-[140px]" },
+              { src: "/logos/alltherooms.png", alt: "alltherooms", liClass: "h-[90px]", imgClass: "max-h-[90px] max-w-[140px]" },
               { src: "/logos/A&C.png", alt: "A&C", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
             ].map((logo) => (
               <li
