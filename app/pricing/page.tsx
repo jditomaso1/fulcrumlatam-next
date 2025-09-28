@@ -81,11 +81,10 @@ export default function PricingPage() {
             </ul>
           </div>
         </div>
-      </section>
-          <p className="mt-6 text-sm text-gray-600">
-            Costs include payroll, compliance, and HR support. Discounts available for pods (2–6 hires) and annual contracts.
-          </p>
-        </div>
+
+        <p className="mt-6 text-sm text-gray-600">
+          Costs include payroll, compliance, and HR support. Discounts available for pods (2–6 hires) and annual contracts.
+        </p>
       </section>
 
       {/* SLA & guarantees */}
