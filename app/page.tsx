@@ -58,11 +58,14 @@ export default function FulcrumLatamLanding() {
               { src: "/logos/merritt.png", alt: "Merritt", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/lendsmart.png", alt: "Lendsmart", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
             ].map((logo) => (
-              <li key={logo.alt} className="h-20 flex items-center justify-center">
+              <li
+                key={logo.alt}
+                className={`flex items-center justify-center ${logo.liClass ?? "h-20"}`}
+              >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-16 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition"
+                  className={`w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition ${logo.imgClass ?? "max-h-16"}`}
                 />
               </li>
             ))}
@@ -84,11 +87,14 @@ export default function FulcrumLatamLanding() {
               { src: "/logos/kin+carta.png", alt: "kin+carta", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/acue.png", alt: "acue" },
             ].map((logo) => (
-              <li key={logo.alt} className="h-20 flex items-center justify-center">
+              <li
+                key={logo.alt}
+                className={`flex items-center justify-center ${logo.liClass ?? "h-20"}`}
+              >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-16 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition"
+                  className={`w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition ${logo.imgClass ?? "max-h-16"}`}
                 />
               </li>
             ))}
@@ -111,11 +117,14 @@ export default function FulcrumLatamLanding() {
               { src: "/logos/alltherooms.png", alt: "alltherooms", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/A&C.png", alt: "A&C", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
             ].map((logo) => (
-              <li key={logo.alt} className="h-20 flex items-center justify-center">
+              <li
+                key={logo.alt}
+                className={`flex items-center justify-center ${logo.liClass ?? "h-20"}`}
+              >
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-16 w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition"
+                  className={`w-auto object-contain grayscale contrast-125 opacity-80 hover:opacity-100 transition ${logo.imgClass ?? "max-h-16"}`}
                 />
               </li>
             ))}
