@@ -78,11 +78,11 @@ export default function FulcrumLatamLanding() {
             "
           >
             {[
-              { src: "/logos/logo-7.png", alt: "Client 7" },
-              { src: "/logos/logo-8.png", alt: "Client 8" },
-              { src: "/logos/logo-9.png", alt: "Client 9" },
-              { src: "/logos/logo-10.png", alt: "Client 10" },
-              { src: "/logos/logo-11.png", alt: "Client 11" },
+              { src: "/logos/livly.png", alt: "Livly" },
+              { src: "/logos/loeb.png", alt: "Lobe Enterprises" },
+              { src: "/logos/killcliff.png", alt: "killcliff" },
+              { src: "/logos/kin+carta.png", alt: "kin+carta" },
+              { src: "/logos/acue.png", alt: "acue" },
             ].map((logo) => (
               <li key={logo.alt} className="h-20 flex items-center justify-center">
                 <img
