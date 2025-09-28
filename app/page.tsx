@@ -52,11 +52,11 @@ export default function FulcrumLatamLanding() {
           >
             {[
               { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
-              { src: "/logos/sio.png", alt: "Sio" },
-              { src: "/logos/co-counselor.png", alt: "CoCounselor" },
-              { src: "/logos/deckard.png", alt: "Deckard" },
-              { src: "/logos/merritt.png", alt: "Merritt" },
-              { src: "/logos/lendsmart.png", alt: "Lendsmart" },
+              { src: "/logos/sio.png", alt: "Sio", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/co-counselor.png", alt: "CoCounselor", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/deckard.png", alt: "Deckard", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/merritt.png", alt: "Merritt", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/lendsmart.png", alt: "Lendsmart", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
             ].map((logo) => (
               <li key={logo.alt} className="h-20 flex items-center justify-center">
                 <img
@@ -78,10 +78,10 @@ export default function FulcrumLatamLanding() {
             "
           >
             {[
-              { src: "/logos/livly.png", alt: "Livly" },
-              { src: "/logos/loeb.png", alt: "Lobe Enterprises" },
-              { src: "/logos/killcliff.png", alt: "killcliff" },
-              { src: "/logos/kin+carta.png", alt: "kin+carta" },
+              { src: "/logos/livly.png", alt: "Livly", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/loeb.png", alt: "Lobe Enterprises", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/killcliff.png", alt: "killcliff", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/kin+carta.png", alt: "kin+carta", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
               { src: "/logos/acue.png", alt: "acue" },
             ].map((logo) => (
               <li key={logo.alt} className="h-20 flex items-center justify-center">
@@ -104,12 +104,12 @@ export default function FulcrumLatamLanding() {
             "
           >
             {[
-              { src: "/logos/nunbelievable.png", alt: "nunbelievable" },
-              { src: "/logos/attune.png", alt: "attune" },
-              { src: "/logos/vestre.png", alt: "vestre" },
-              { src: "/logos/asc.png", alt: "asc" },
-              { src: "/logos/alltherooms.png", alt: "alltherooms" },
-              { src: "/logos/A&C.png", alt: "A&C" },
+              { src: "/logos/nunbelievable.png", alt: "nunbelievable", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/attune.png", alt: "attune", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/vestre.png", alt: "vestre", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/asc.png", alt: "asc", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/alltherooms.png", alt: "alltherooms", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
+              { src: "/logos/A&C.png", alt: "A&C", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px]" },
             ].map((logo) => (
               <li key={logo.alt} className="h-20 flex items-center justify-center">
                 <img
