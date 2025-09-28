@@ -104,12 +104,12 @@ export default function FulcrumLatamLanding() {
             "
           >
             {[
-              { src: "/logos/logo-12.png", alt: "Client 12" },
-              { src: "/logos/logo-13.png", alt: "Client 13" },
-              { src: "/logos/logo-14.png", alt: "Client 14" },
-              { src: "/logos/logo-15.png", alt: "Client 15" },
-              { src: "/logos/logo-16.png", alt: "Client 16" },
-              { src: "/logos/logo-17.png", alt: "Client 17" },
+              { src: "/logos/nunbelievable.png", alt: "nunbelievable" },
+              { src: "/logos/attune.png", alt: "attune" },
+              { src: "/logos/vestre.png", alt: "vestre" },
+              { src: "/logos/asc.png", alt: "asc" },
+              { src: "/logos/alltherooms.png", alt: "alltherooms" },
+              { src: "/logos/A&C.png", alt: "A&C" },
             ].map((logo) => (
               <li key={logo.alt} className="h-20 flex items-center justify-center">
                 <img
