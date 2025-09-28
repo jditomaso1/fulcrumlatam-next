@@ -51,7 +51,7 @@ export default function FulcrumLatamLanding() {
             "
           >
             {[
-              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures" },
+              { src: "/logos/rule-1-ventures.png", alt: "Rule 1 Ventures", liClass: "h-[90px]", imgClass: "max-h-[60px] max-w-[140px] },
               { src: "/logos/sio.png", alt: "Sio" },
               { src: "/logos/co-counselor.png", alt: "CoCounselor" },
               { src: "/logos/deckard.png", alt: "Deckard" },
