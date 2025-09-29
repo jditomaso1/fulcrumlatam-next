@@ -23,10 +23,17 @@ export async function POST(req: Request) {
       return NextResponse.json({ ok: false, error: "Slack not configured." }, { status: 500 });
     }
 
-    // Construct a clean Slack Block message
-    const text = `New contact request`;
+    // Build a space-separated line of @mentions (use real user IDs)
+    const mentionLine = `<@U07J3A86PD0> <@U07J0CQSGP7> <@U07J373LSGK> <@U08G6C9KGGH>`;
+    
+    // Top-level text also includes mentions (this helps trigger actual notifications)
+    const text = `New contact request — Notifying: ${mentionLine}`;
+    
     const blocks = [
-      { type: "header", text: { type: "plain_text", text: "🆕 New Contact Request", emoji: true } },
+      {
+        type: "header",
+        text: { type: "plain_text", text: "🆕 New Contact Request", emoji: true }
+      },
       {
         type: "section",
         fields: [
@@ -35,17 +42,17 @@ export async function POST(req: Request) {
           { type: "mrkdwn", text: `*Company:*\n${escape(company || "-")}` },
         ],
       },
-      { type: "section", text: { type: "mrkdwn", text: `*Message:*\n${escape(message)}` } },
       {
-        type: "context",
-        elements: [
-          { 
-            type: "mrkdwn", 
-            text: `🔔 Notifying: <@U07J3A86PD0> <@U07J0CQSGP7> <@U07J373LSGK> <@U08G6C9KGGH>` 
-          }
-        ]
+        type: "section",
+        text: { type: "mrkdwn", text: `*Message:*\n${escape(message)}` }
       },
-      
+    
+      // ✅ Use a section block (not context) for mentions
+      {
+        type: "section",
+        text: { type: "mrkdwn", text: `🔔 Notifying: ${mentionLine}` }
+      },
+    
       {
         type: "context",
         elements: [
