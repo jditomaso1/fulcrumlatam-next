@@ -45,17 +45,73 @@ export default function ContactPage() {
             {/* Form */}
             <div>
               <h2 className="text-2xl md:text-3xl font-semibold">Tell us what you need</h2>
-              <form className="mt-6 grid grid-cols-1 gap-3">
-                <input className="rounded-xl border px-4 py-3" placeholder="Full name" />
-                <input className="rounded-xl border px-4 py-3" placeholder="Work email" type="email" />
-                <input className="rounded-xl border px-4 py-3" placeholder="Company" />
+              <form
+                className="mt-6 grid grid-cols-1 gap-3"
+                onSubmit={async (e) => {
+                  e.preventDefault();
+                  const form = e.currentTarget as HTMLFormElement;
+                  const fd = new FormData(form);
+                  const payload = {
+                    name: String(fd.get("name") || ""),
+                    email: String(fd.get("email") || ""),
+                    company: String(fd.get("company") || ""),
+                    message: String(fd.get("message") || ""),
+                    hp: String(fd.get("hp") || ""), // honeypot
+                  };
+              
+                  const btn = form.querySelector("button[type='submit']") as HTMLButtonElement | null;
+                  if (btn) btn.disabled = true;
+              
+                  try {
+                    const res = await fetch("/api/contact", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(payload),
+                    });
+                    const data = await res.json();
+                    if (data.ok) {
+                      alert("Thanks! We received your message and will reply within one business day.");
+                      form.reset();
+                    } else {
+                      alert(`Sorry, something went wrong: ${data.error || "unknown error"}`);
+                    }
+                  } catch (err: any) {
+                    alert(`Network error: ${err?.message || err}`);
+                  } finally {
+                    if (btn) btn.disabled = false;
+                  }
+                }}
+              >
+                {/* hidden honeypot to trap bots */}
+                <input type="text" name="hp" tabIndex={-1} autoComplete="off" className="hidden" />
+              
+                <input
+                  name="name"
+                  className="rounded-xl border px-4 py-3"
+                  placeholder="Full name"
+                  required
+                />
+                <input
+                  name="email"
+                  className="rounded-xl border px-4 py-3"
+                  placeholder="Work email"
+                  type="email"
+                  required
+                />
+                <input
+                  name="company"
+                  className="rounded-xl border px-4 py-3"
+                  placeholder="Company"
+                />
                 <textarea
+                  name="message"
                   className="rounded-xl border px-4 py-3"
                   placeholder="What roles or pod are you trying to fill?"
                   rows={4}
+                  required
                 />
                 <button
-                  type="button"
+                  type="submit"
                   className="rounded-2xl bg-black text-white px-4 py-3 text-sm font-medium shadow-sm hover:opacity-90 inline-flex items-center gap-2"
                 >
                   Submit inquiry
