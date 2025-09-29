@@ -39,6 +39,13 @@ export async function POST(req: Request) {
       {
         type: "context",
         elements: [
+          { type: "mrkdwn", text: `🔔 Notifying: <U07J3A86PD0> <U07J0CQSGP7> <U07J373LSGK> <U08G6C9KGGH>` }
+        ]
+      },
+      
+      {
+        type: "context",
+        elements: [
           { type: "mrkdwn", text: `Source: ${escape(req.headers.get("origin") || "unknown")}` },
           { type: "mrkdwn", text: `User-Agent: ${escape(req.headers.get("user-agent") || "n/a")}` },
         ],
