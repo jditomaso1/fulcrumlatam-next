@@ -9,7 +9,7 @@ export default function TalentPage() {
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <div className="max-w-3xl">
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
@@ -28,19 +28,20 @@ export default function TalentPage() {
               gain access to professionals who not only meet technical requirements
               but also integrate seamlessly into U.S. workflows and time zones.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href="/#contact"
-                className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
-              >
-                Book an intro call
-              </a>
-              <Link
-                href="/pricing"
-                className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100"
-              >
-                View pricing
-              </Link>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center gap-2 rounded-2xl bg-black text-white px-4 py-2 text-sm font-medium shadow-sm hover:opacity-90"
+                >
+                  Book an intro call
+                </Link>
+                
+                <Link 
+                  href="/pricing" 
+                  className="inline-flex items-center gap-2 rounded-2xl bg-white text-gray-900 px-4 py-2 text-sm font-medium ring-1 ring-gray-200 hover:bg-gray-100"
+                >
+                  Explore services
+                </Link>
             </div>
             <div className="mt-6 flex items-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2">
