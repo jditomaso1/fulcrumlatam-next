@@ -9,7 +9,7 @@ export default function WhyPage() {
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Hero (matches homepage spacing, fonts, styles) */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/5 via-transparent to-transparent" />
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
           <div className="max-w-2xl">
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
