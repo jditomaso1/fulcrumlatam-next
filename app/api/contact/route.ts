@@ -39,7 +39,10 @@ export async function POST(req: Request) {
       {
         type: "context",
         elements: [
-          { type: "mrkdwn", text: `🔔 Notifying: <U07J3A86PD0> <U07J0CQSGP7> <U07J373LSGK> <U08G6C9KGGH>` }
+          { 
+            type: "mrkdwn", 
+            text: `🔔 Notifying: <@U07J3A86PD0> <@U07J0CQSGP7> <@U07J373LSGK> <@U08G6C9KGGH>` 
+          }
         ]
       },
       
